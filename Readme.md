@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Королёв](https://up.htmlacademy.ru/adaptive/16/user/675169).
-* Наставник: `Неизвестно`.
+* Наставник: `Алексей Корякин`.
 
 ---
 
