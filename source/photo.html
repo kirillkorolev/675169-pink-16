@@ -123,6 +123,32 @@
           </li>
         </ul>
       </section>
+      <section class="image-upload">
+        <h2 class="visually-hidden">Форма загрузки фотграфий</h2>
+        <form class="image-upload__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="image-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <img class="image-upload__current-image" src="#" width="#" height="#">
+          <ul class="image-upload__list filters">
+            <li class="filters__item">
+              <input type="radio" name="filter-image" value="cut" id="filter-cut" checked>
+              <label for="filter-cut">Вырезать</label>
+            </li>
+            <li class="filters__item">
+              <input type="radio" name="filter-image" value="fill" id="filter-fill">
+              <label for="filter-fill">Залить</label>
+            </li>
+            <li class="filters__item">
+              <input type="radio" name="filter-image" value="contrast" id="filter-contrast">
+              <label for="filter-contrast">Поменять контраст</label>
+            </li>
+          </ul>
+          <div class="image-upload__range">
+            <input type="range" name="range">
+          </div>
+          <button class="image-upload__button image-upload__button--post" type="submit">Запостить</button>
+          <button class="image-upload__button image-upload__button--cancel" type="reset">Отмена</button>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__link" href="#">
