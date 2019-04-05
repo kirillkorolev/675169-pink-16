@@ -37,18 +37,20 @@
         <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
         <form class="" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__wrapper">
-            <p class="form__item">
-              <label for="user-surname">Фамилия:</label>
-              <input class="form__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию*">
-            </p>
-            <p class="form__item">
-              <label for="user-name">Имя:</label>
-              <input class="form__input" id="user-name" type="text" name="name" placeholder="Укажите имя*">
-            </p>
-            <p class="form__item">
-              <label for="user-middle-name">Отчество:</label>
-              <input class="form__input" id="user-middle-name" type="text" name="name" placeholder="Ну и отчество тоже">
-            </p>
+            <fieldset class="form__name-details">
+              <p class="form__item">
+                <label for="user-surname">Фамилия:</label>
+                <input class="form__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию*">
+              </p>
+              <p class="form__item">
+                <label for="user-name">Имя:</label>
+                <input class="form__input" id="user-name" type="text" name="name" placeholder="Укажите имя*">
+              </p>
+              <p class="form__item">
+                <label for="user-middle-name">Отчество:</label>
+                <input class="form__input" id="user-middle-name" type="text" name="name" placeholder="Ну и отчество тоже">
+              </p>
+            </fieldset>
           </div>
           <div class="form__wrapper">
             <fieldset class="form__checkbox">
@@ -82,17 +84,19 @@
             </fieldset>
           </div>
           <div class="form__wrapper">
-            <p class="form__item">
-              <label for="user-phone">Номер телефона</label>
-              <input class="form__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="form__item">
-              <label for="user-mail">Адрес почты</label>
-              <input class="form__input" id="user-mail" type="email" name="email" placeholder="Введите почту*">
-            </p>
+            <fieldset class="form__contact-details">
+              <p class="form__item">
+                <label for="user-phone">Номер телефона</label>
+                <input class="form__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </p>
+                <p class="form__item">
+                <label for="user-mail">Адрес почты</label>
+                <input class="form__input" id="user-mail" type="email" name="email" placeholder="Введите почту*">
+              </p>
+            </fieldset>
           </div>
           <div class="form__wrapper">
-            <fieldset>
+            <fieldset class="form__system-details">
               <legend class="form__item form__item--center">С каким приложением путешествовали?</legend>
               <ul class="form__radio-list">
                 <li class="form__radio-item">
@@ -110,11 +114,14 @@
               </ul>
             </fieldset>
           </div>
+
           <div class="form__wrapper">
-            <p class="form__item form__item--center">
-              <label for="review-text">Опишите свои эмоции</label>
-              <textarea id="review-text" name="review" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
+            <fieldset class="form__impressions">
+              <p class="form__item form__item--center">
+                <label for="review-text">Опишите свои эмоции</label>
+                <textarea id="review-text" name="review" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </p>
+            </fieldset>
           </div>
           <button class="form__button" type="submit">Отправить форму</button>
           <small class="form__note"><sup>*</sup>-обязтельные поля</small>
