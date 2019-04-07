@@ -1,2 +1,13 @@
+@import "./../../node_modules/normalize.scss/normalize";
 @import "./base/fonts.scss";
 @import "./base/scaffolding.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/page-title.scss";
+@import "./blocks/promotion.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/photos.scss";
+
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
