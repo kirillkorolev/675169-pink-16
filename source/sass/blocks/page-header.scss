@@ -1,4 +1,8 @@
 .page-header {
   background-color: $dark-navy;
-  color: $white;
+}
+
+.page-header__container {
+  width: 280px;
+  margin: 0 auto;
 }

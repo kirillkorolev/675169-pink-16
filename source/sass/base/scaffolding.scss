@@ -11,7 +11,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-width: $mobile-width;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: $dark-navy;
 }
 
 a {

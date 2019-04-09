@@ -2,8 +2,20 @@
   background-color: $dark-navy;
   color: $white;
   padding-top: 24px;
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/backgrounds/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 320px auto;
+  min-height: 400px;
+  position: relative;
+}
+
+.page-title__title {
+  text-align: center;
+}
+
+.page-title__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

@@ -1,10 +1,15 @@
 .site-list__link {
   color: $white;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: $dark-navy;
+  color: $white;
 }
 
 .site-list__item {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-top: 1px solid $black;
-  border-bottom: 1px solid $dark-grey;
+  border-top: 1px solid $dark-grey;
+  border-bottom: 1px solid $black;
 }
+
