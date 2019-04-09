@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="" width="" height="" alt="Логотип фотоприложения Pink">
@@ -39,7 +40,7 @@
         <p class="photos__promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="photos__list">
           <li class="photos__item photos__item--panorama-top">
-            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="#" width="" height="" alt="Фотография Анны"></a>
+            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="./img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография Анны"></a>
             <div class="photos__item__top-slogan">Панорма дня</div>
             <h3 class="photos__author">Анна</h3>
             <span class="photos__time">5 минут назад</span>
@@ -52,7 +53,7 @@
             </div>
           </li>
           <li class="photos__item">
-            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="#" width="" height="" alt="Фотография Левона"></a>
+            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="./img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона"></a>
             <h3 class="photos__author">Левон</h3>
             <span class="photos__time">5 часов назад</span>
             <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -64,7 +65,7 @@
             </div>
           </li>
           <li class="photos__item">
-            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="#" width="" height="" alt="Фотография Антона"></a>
+            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="./img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона"></a>
             <h3 class="photos__author">Антон</h3>
             <span class="photos__time">12 часов назад</span>
             <p class="photos__text">Соседи будут рады</p>
@@ -76,7 +77,7 @@
             </div>
           </li>
           <li class="photos__item">
-            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="#" width="" height="" alt="Фотография Бориса"></a>
+            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="./img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса"></a>
             <h3 class="photos__author">Борис</h3>
             <span class="photos__time">20 часов назад</span>
             <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -88,7 +89,7 @@
             </div>
           </li>
           <li class="photos__item">
-            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="#" width="" height="" alt="Фотография Сергея"></a>
+            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="./img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея"></a>
             <h3 class="photos__author">Сергей</h3>
             <span class="photos__time">25 часов назад</span>
             <p class="photos__text">Самая кубанская в мире</p>
@@ -100,7 +101,7 @@
             </div>
           </li>
           <li class="photos__item">
-            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="#" width="" height="" alt="Фотография Максима"></a>
+            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="./img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима"></a>
             <h3 class="photos__author">Максим</h3>
             <span class="photos__time">40 часов нназад</span>
             <p class="photos__text">Где снег то?</p>
@@ -112,7 +113,7 @@
             </div>
           </li>
           <li class="photos__item">
-            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="#" width="" height="" alt="Фотография Надежды"></a>
+            <a class="photos__image-link" href="#"><img class="photos__uploaded-photo" src="./img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды"></a>
             <h3 class="photos__author">Надежда</h3>
             <span class="photos__time">45 часов нназад</span>
             <p class="photos__text">Всем GM и взаимные лайки</p>
@@ -129,7 +130,7 @@
         <h2 class="visually-hidden">Форма загрузки фотграфий</h2>
         <form class="image-upload__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="image-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-          <img class="image-upload__current-image" src="#" width="#" height="#">
+          <img class="image-upload__current-image" src="./img/photo-road-mobile@1x.jpg" width="280" height="378">
           <ul class="image-upload__list filters">
             <li class="filters__item">
               <input type="radio" name="filter-image" value="cut" id="filter-cut" checked>
@@ -178,5 +179,6 @@
         </a>
       </div>
     </footer>
+    </div>
   </body>
 </html>

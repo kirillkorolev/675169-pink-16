@@ -11,10 +11,8 @@
 }
 
 .advantages__list {
-  background-color: #f2f2f2;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  background-color: $light-grey;
+  @include reset-list;
 }
 
 .advantages__title {
