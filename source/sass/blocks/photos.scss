@@ -4,6 +4,9 @@
   line-height: 30px;
   padding-top: 35px;
   padding-bottom: 43px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
 }
 
 .photos__list {
@@ -13,21 +16,23 @@
 .photos__item {
   background-color: $light-grey;
   width: 280px;
-  padding-left: 18px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
+.photos__uploaded-photo {
+  margin-bottom: 24px;
+}
+
 .photos__author {
-  padding: 0;
-  margin: 0;
   font-size: 14px;
   line-height: 24px;
-  padding-top: 24px;
-  font-weight: normal;
+  font-weight: 700;
+
+  margin: 0;
 }
 
 .photos__text {
-  padding: 0;
   margin: 0;
 }
 
@@ -36,6 +41,9 @@
   line-height: 24px;
   color: $red;
   text-transform: uppercase;
-  padding-bottom: 16px;
 }
 
+.photos__item-text {
+  margin-left: 18px;
+  padding-bottom: 25px;
+}

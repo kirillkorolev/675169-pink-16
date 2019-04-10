@@ -1,7 +1,8 @@
 .promotion {
-  background-color: $dark-navy;
   color: $white;
-  border: 1px solid transparent;
+
+  background-color: $dark-navy;
+  padding-top: 28px;
   margin-bottom: 35px;
 }
 
@@ -13,7 +14,7 @@
   display: block;
   text-align: center;
   padding: 10px 0;
-  margin-top: 28px;
+
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 18px;
@@ -25,9 +26,13 @@
 
 .promotion__download-list {
   @include reset-list;
+
   width: 210px;
   margin: 0 auto;
   margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .promotion__text {
@@ -37,4 +42,5 @@
   text-align: center;
   padding-left: 40px;
   padding-right: 30px;
+  padding-bottom: 24px;
 }

@@ -1,21 +1,15 @@
 .page-title {
-  background-color: $dark-navy;
   color: $white;
+
+  background-color: $dark-navy;
   padding-top: 24px;
-  background-image: url("../img/backgrounds/bg-back-mobile@1x.jpg");
+  background-image: url("../img/pictures/iphone-hand-mobile@1x.png"), url("../img/backgrounds/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 320px auto;
+  background-position: 0 110px, center center;
+  background-size: 255px 290px, 320px auto;
   min-height: 400px;
-  position: relative;
 }
 
 .page-title__title {
   text-align: center;
-}
-
-.page-title__image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }

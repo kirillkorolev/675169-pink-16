@@ -3,6 +3,19 @@
 }
 
 .page-header__container {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 22px;
+}
+
+.page-header__logo {
+  fill: $white;
+}
+
+.page-header__toggle {
+  fill: $white;
+  background: transparent;
+  border: none;
 }

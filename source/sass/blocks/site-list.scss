@@ -1,11 +1,14 @@
 .site-list__link {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
   color: $white;
+
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
   background-color: $dark-navy;
-  color: $white;
 }
 
 .site-list__item {

@@ -1,5 +1,6 @@
 .social__list {
   @include reset-list;
+  display: flex;
 }
 
 .social__item {
@@ -7,4 +8,11 @@
   height: 53px;
   border-radius: 50%;
   border: 4px solid $border-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  fill: $red;
 }
