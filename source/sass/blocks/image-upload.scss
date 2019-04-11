@@ -1,0 +1,14 @@
+.image-upload__text {
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.image-upload__list {
+  @include reset-list;
+}
+
+.image-upload__form {
+  width: 280px;
+  margin: 0 auto;
+}

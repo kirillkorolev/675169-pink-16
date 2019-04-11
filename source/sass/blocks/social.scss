@@ -1,6 +1,7 @@
 .social__list {
   @include reset-list;
   display: flex;
+  justify-content: space-between;
 }
 
 .social__item {
