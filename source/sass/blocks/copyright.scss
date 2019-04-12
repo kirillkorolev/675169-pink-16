@@ -1,3 +1,11 @@
 .copyright__link {
   fill: $red;
+  padding: 0 18px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }

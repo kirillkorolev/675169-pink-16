@@ -3,11 +3,11 @@
 }
 
 .page-header__container {
-  width: 320px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 20px 22px;
+  border-bottom: 1px solid $black;
 }
 
 .page-header__logo {
@@ -18,4 +18,31 @@
   fill: $white;
   background: transparent;
   border: none;
+}
+
+.page-header__toggle {
+  font-size: 0;
+  width: 27px;
+  height: 27px;
+  position: relative;
+}
+
+.page-header__toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: $white;
+  transform: rotate(45deg);
+  left: 5px;
+}
+
+.page-header__toggle::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: $white;
+  transform: rotate(-45deg);
+  left: 5px;
 }
