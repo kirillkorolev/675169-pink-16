@@ -1,7 +1,7 @@
 .social__list {
   @include reset-list;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social__item {
@@ -16,4 +16,8 @@
 
 .social__link {
   fill: $red;
+}
+
+.social__item:nth-child(2) {
+  margin: 0 10px;
 }
