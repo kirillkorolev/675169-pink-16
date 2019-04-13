@@ -1,0 +1,39 @@
+.page-footer {
+  line-height: 18px;
+  text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.page-footer__link {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .page-footer .container {
+    width: 940px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .page-footer .container {
+    padding: 0 10px;
+    font-size: 18px;
+  }
+}

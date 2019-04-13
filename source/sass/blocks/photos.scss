@@ -1,0 +1,47 @@
+.photos__promo {
+  margin: 0;
+  line-height: 30px;
+  padding-bottom: 43px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+}
+
+.photos__list {
+  @include reset-list;
+}
+
+.photos__item {
+  background-color: $light-grey;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.photos__uploaded-photo {
+  margin-bottom: 24px;
+}
+
+.photos__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+.photos__text {
+  margin: 0;
+}
+
+.photos__like-raiting {
+  font-size: 12px;
+  line-height: 24px;
+  color: $red;
+  text-transform: uppercase;
+}
+
+.photos__item-text {
+  margin-left: 18px;
+  padding-bottom: 25px;
+}

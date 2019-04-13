@@ -1,0 +1,137 @@
+.form__text {
+  line-height: 30px;
+  text-align: center;
+
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.form__name-details {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__item label {
+  padding-left: 25px;
+}
+
+.form__item {
+  color: $red;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  &--center {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.form__input,
+.form__impressions textarea {
+  font-size: 18px;
+  line-height: 30px;
+
+  border: 2px solid $inpt-border-grey;
+  width: 282px;
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form__input {
+  margin-bottom: 12px;
+}
+
+.form__checkbox {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__checkbox-list,
+.form__radio-list {
+  @include reset-list;
+}
+
+.form__system-details {
+  border: none;
+  padding: 0;
+}
+
+.form__checkbox-item label,
+.form__system-details label {
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 35px;
+}
+
+.form__contact-details {
+  @include reset-list;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__impressions {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__button {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+
+  width: 282px;
+  background-color: $green;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 10px 0;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.form__wrapper:nth-child(even) {
+  background-color: $light-grey;
+  margin-bottom: 27px;
+  padding-top: 27px;
+  padding-bottom: 44px;
+}
+
+.form__wrapper:nth-child(odd) {
+  margin-bottom: 30px;
+}
+
+.form__wrapper fieldset {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__footer {
+  width: 282px;
+  margin: 0 auto;
+}
+
+.form__note {
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form__note sup {
+  color: $red;
+}
