@@ -12,7 +12,7 @@
   @include reset-list;
   background-color: $light-grey;
   padding-top: 78px;
-  padding-bottom: 178px;
+
 
   min-height: 785px;
 
@@ -31,10 +31,6 @@
   padding-bottom: 10px;
 }
 
-.advantages {
-
-}
-
 .advantages__description {
   margin: 0;
   padding: 0;
@@ -44,3 +40,54 @@
   padding-right: 20px;
 }
 
+.advantages__article {
+  &--hidden {
+    display: none;
+  }
+}
+
+.advantages__article-title {
+
+}
+
+.advantages__article-title {
+  line-height: 24px;
+}
+
+.advantages__link {
+  color: $red;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .advantages__slogan {
+    padding-bottom: 0;
+  }
+
+  .advantages__list {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 320px;
+    padding-right: 20px;
+    background-image: url("../img/pictures/iphone-screen-3-tablet@1x.png");
+    background-size: 268px 480px;
+    background-position: 20px 20px;
+
+  }
+
+  .advantages__title {
+    text-align: left;
+  }
+
+  .advantages__description {
+    text-align: left;
+    padding-left: 0;
+  }
+
+}
