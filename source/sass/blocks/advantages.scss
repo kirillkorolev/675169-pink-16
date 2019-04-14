@@ -47,10 +47,6 @@
 }
 
 .advantages__article-title {
-
-}
-
-.advantages__article-title {
   line-height: 24px;
 }
 
@@ -90,4 +86,98 @@
     padding-left: 0;
   }
 
+  .advantages__article {
+    &--hidden {
+      display: block;
+    }
+
+    width: 620px;
+    margin: 0 auto;
+    background-image: url("../img/pictures/timer-tablet@1x.png");
+    background-size: 238px 276px;
+    background-repeat: no-repeat;
+    background-position: 10px 60px;
+  }
+
+  .advantages__article-wrapper {
+    width: 310px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 310px;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    background-color: $light-grey;
+  }
+
+  .advantages__slogan {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 300;
+    background-color: $white;
+  }
+
+  .advantages__list {
+    width: 940px;
+    margin: 0 auto;
+    flex-direction: row;
+    background-image: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .advantages__wrapper {
+    width: 100%;
+    background-color: $light-grey;
+
+  }
+
+  .advantages__title {
+    text-align: center;
+  }
+
+  .advantages__description {
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .advantages__item {
+    padding-top: 325px;
+    background-repeat: no-repeat;
+    background-size: 292px 302px;
+    background-position: center 0;
+  }
+
+  .advantages__item:first-child {
+    background-image: url("../img/pictures/iphone-screen-1-desktop@1x.png");
+  }
+
+  .advantages__item:nth-child(2) {
+    background-image: url("../img/pictures/iphone-screen-2-desktop@1x.png");
+  }
+
+  .advantages__item:last-child {
+    background-image: url("../img/pictures/iphone-screen-3-desktop@1x.png");
+  }
+
+  .advantages__article {
+    width: 940px;
+    margin: 0 auto;
+    background-image: url("../img/pictures/timer-desktop@1x.png");
+    background-size: 298px 345px;
+    background-repeat: no-repeat;
+    background-position: 10px 60px;
+  }
+
+  .advantages__article-wrapper {
+    width: 570px;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    margin-left: 370px;
+
+  }
+}
+

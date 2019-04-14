@@ -24,14 +24,14 @@
   }
 
   .page-footer .container {
-    width: 940px;
+    width: 660px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .page-footer .container {
     padding: 0 10px;
     font-size: 18px;
