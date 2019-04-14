@@ -1,0 +1,21 @@
+.map {
+  min-height: 200px;
+  background-image: url("../img/backgrounds/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 100% -445px;
+  background-size: 320px 645px;
+  margin-bottom: -35px;
+  position: relative;
+}
+
+.map__shape {
+  color: $white;
+  min-height: 35px;
+  width: 100%;
+  background-image: url("../img/style-help/bg-triangle-white-footer.png");
+  background-size: 100% 35px;
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+
+  position: absolute;
+}
