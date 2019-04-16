@@ -1,10 +1,11 @@
 .promotion {
   color: $white;
   background-color: $dark-navy;
-  background-image: url("../../img/backgrounds/bg-back-mobile@1x.jpg");
+  background-image: url("../img/backgrounds/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position:  center -70px;
   background-size: 100% auto;
+  padding-top: 425px;
 }
 
 .promotion--main {
@@ -15,9 +16,9 @@
 }
 
 .promotion__wrapper {
-  min-height: 665px;
-  padding-top: 425px;
-
+  min-height: 270px;
+  //padding-top: 425px;
+  background-color: $dark-navy;
 }
 
 .promotion__button {
@@ -80,6 +81,9 @@
   }
 }
 
+.promotion--mod {
+  padding-top: 0;
+}
 
 @media (min-width: $tablet-width) {
   .promotion__title {
@@ -109,6 +113,7 @@
     background-repeat: no-repeat;
     padding-top: 0;
     padding-right: 320px;
+    background-color: transparent;
   }
 
   .promotion {

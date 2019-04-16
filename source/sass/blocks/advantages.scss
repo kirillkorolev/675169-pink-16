@@ -56,9 +56,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__wrapper {
+  .advantages__container {
     width: 660px;
     margin: 0 auto;
+  }
+
+  .advantages__wrapper {
+    background-color: $light-grey;
   }
 
   .advantages__slogan {
@@ -108,10 +112,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages {
-    background-color: $light-grey;
-  }
-
   .advantages__slogan {
     font-size: 50px;
     line-height: 55px;
@@ -120,8 +120,6 @@
   }
 
   .advantages__list {
-    width: 940px;
-    margin: 0 auto;
     flex-direction: row;
     background-image: none;
     padding-left: 0;
@@ -129,10 +127,8 @@
     padding-top: 0;
   }
 
-  .advantages__wrapper {
-    width: 100%;
-    background-color: $light-grey;
-
+  .advantages__container {
+    width: 940px;
   }
 
   .advantages__title {
