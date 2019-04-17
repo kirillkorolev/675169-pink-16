@@ -13,13 +13,14 @@
   background-color: $light-grey;
   padding-top: 78px;
 
-
   min-height: 785px;
 
   background-image: url("../img/pictures/iphone-screen-mobile@1x.png");
   background-repeat:  no-repeat;
   background-position:  center 540px;
   background-size: 155px 280px;
+
+  position: relative;
 }
 
 .advantages__title {
@@ -55,6 +56,20 @@
   text-decoration: underline;
 }
 
+.advantages__list::before {
+  content: "";
+  background-image: url("../img/style-help/bg-triangle-white.svg");
+  background-size: 100% 35px;
+  background-repeat: no-repeat;
+  background-position: 0 -5px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  left: 0;
+  top: 0;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__container {
     width: 660px;
@@ -78,7 +93,6 @@
     background-image: url("../img/pictures/iphone-screen-3-tablet@1x.png");
     background-size: 268px 480px;
     background-position: 20px 20px;
-
   }
 
   .advantages__title {

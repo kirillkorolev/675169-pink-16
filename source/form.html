@@ -130,15 +130,15 @@
               <legend class="form__item form__item--center">С каким приложением путешествовали?</legend>
               <ul class="form__radio-list">
                 <li class="form__radio-item">
-                  <input type="radio" name="phone-type" value="ios" id="filter-ios">
+                  <input class="visually-hidden form__input form__input--radio" type="radio" name="phone-type" value="ios" id="filter-ios" checked>
                   <label class="form__radio-label" for="filter-ios">Pink для IOS</label>
                 </li>
                 <li class="form__radio-item">
-                  <input type="radio" name="phone-type" value="android" id="filter-android">
+                  <input class="visually-hidden form__input form__input--radio" type="radio" name="phone-type" value="android" id="filter-android">
                   <label class="form__radio-label" for="filter-android">Pink для Android</label>
                 </li>
                 <li class="form__radio-item">
-                  <input type="radio" name="phone-type" value="windows" id="filter-windows">
+                  <input class="visually-hidden form__input form__input--radio" type="radio" name="phone-type" value="windows" id="filter-windows">
                   <label class="form__radio-label" for="filter-windows">Windows Phone</label>
                 </li>
               </ul>
@@ -166,6 +166,7 @@
 
     <footer class="page-footer">
       <div class="container">
+        <div class="page-footer__container">
       <a class="page-footer__link" href="#">
         <span class="visually-hidden">Мобильное приложение Pink</span>
         <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375">
@@ -209,6 +210,8 @@
           </svg>
         </a>
       </div>
+
+        </div>
       </div>
     </footer>
 
