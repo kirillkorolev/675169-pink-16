@@ -64,7 +64,6 @@
   padding: 0;
 }
 
-.form__checkbox-item label,
 .form__system-details label {
   font-size: 18px;
   line-height: 30px;
@@ -134,4 +133,61 @@
 
 .form__note sup {
   color: $red;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__input--checkbox {
+  padding: 0;
+}
+
+.form__checkbox-item {
+  margin-bottom: 36px;
+  padding-left: 70px;
+}
+
+.form__checkbox-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__checkbox-label::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $inpt-border-grey;
+  background-color: $white;
+  top: -5px;
+  left: -70px;
+}
+
+.form__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -2px;
+  left: -50px;
 }
