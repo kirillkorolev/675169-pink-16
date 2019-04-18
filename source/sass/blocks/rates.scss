@@ -1,0 +1,42 @@
+.rates__list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rates__list th {
+  background-color: $dark-navy;
+  width: 280px;
+  border-left: 2px solid $border-grey;
+  border-right: 2px solid $border-grey;
+}
+
+.rates__list tr {
+  width: 280px;
+  border-right: 2px solid $border-grey;
+}
+
+.rates__title {
+  color: $white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rates__price {
+  color: $white;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.rates__option {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.rates__list th:nth-child(odd),
+.rates__list td:nth-child(odd) {
+  display: none;
+}
