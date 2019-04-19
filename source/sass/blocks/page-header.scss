@@ -52,7 +52,7 @@
     display: none;
   }
 
-  &--dekstop {
+  &--desktop {
     display: none;
   }
 }
@@ -75,13 +75,13 @@
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .page-header__logo-image {
     &--tablet {
       display: none;
     }
 
-    &--dekstop {
+    &--desktop {
       display: block;
     }
   }
@@ -97,10 +97,6 @@
 
   .page-header__toggle {
     display: none;
-  }
-
-  .page-header {
-
   }
 
   .page-header__wrapper {

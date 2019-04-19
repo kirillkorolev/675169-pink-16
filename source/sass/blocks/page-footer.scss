@@ -23,16 +23,17 @@
     }
   }
 
-  .page-footer .container {
-    width: 940px;
+  .page-footer__container {
+    width: 660px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media (min-width: $dekstop-width) {
-  .page-footer .container {
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: 960px;
     padding: 0 10px;
     font-size: 18px;
   }

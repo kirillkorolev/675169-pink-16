@@ -24,6 +24,7 @@
 
 .image-upload__current-image {
   padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 .image-upload__button {
@@ -52,4 +53,11 @@
   }
 }
 
+.image-upload__buttons-container {
+  border-top: 2px solid $border-grey;
+  padding-top: 38px;
+}
 
+.image-upload__range-input {
+  background-color: $black;
+}

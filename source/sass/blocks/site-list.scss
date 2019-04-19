@@ -15,15 +15,7 @@
   border-bottom: 1px solid $black;
 }
 
-
-@media (min-width: $dekstop-width) {
-  .site-list {
-    display: block;
-  }
-}
-
-
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .site-list {
     width: 625px;
     display: flex;

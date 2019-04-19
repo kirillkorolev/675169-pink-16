@@ -1,0 +1,26 @@
+.reviews__list {
+  @include reset-list;
+
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.reviews__item {
+  &--hidden {
+    display: none;
+  }
+}
+
+.reviews__author {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+}
+
+.reviews__text {
+  line-height: 30px;
+}

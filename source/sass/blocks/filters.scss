@@ -1,0 +1,17 @@
+.filters__list {
+  display: flex;
+  justify-content: center;
+}
+
+.filters__icon {
+  fill: $icons-grey;
+}
+
+.filters__item {
+  padding: 0 17px;
+
+
+  &--current .filters__icon {
+    fill: $red;
+  }
+}
