@@ -1,7 +1,7 @@
 .photos__promo {
   margin: 0;
   line-height: 30px;
-  padding-bottom: 43px;
+  padding-bottom: 49px;
   padding-left: 35px;
   padding-right: 35px;
   text-align: center;
@@ -16,10 +16,14 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  &--panorama-top {
+    position: relative;
+  }
 }
 
 .photos__uploaded-photo {
-  margin-bottom: 24px;
+  margin-bottom: 11px;
 
   &--tablet {
     display: none;
@@ -31,15 +35,18 @@
 }
 
 .photos__author {
+  display: block;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
 
   margin: 0;
+  margin-right: 4px;
 }
 
 .photos__text {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .photos__like-raiting {
@@ -51,12 +58,45 @@
 
 .photos__item-text {
   margin-left: 18px;
-  padding-bottom: 25px;
 }
 
 .photos__time {
+  font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.photos__top-slogan {
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 140px;
+  text-align: center;
+  color: $white;
+  background-color: $red;
+  padding: 6px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.photos__item-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.photos__heart {
+  fill: $red;
+  margin-right: 15px;
+}
+
+.photos__raiting {
+  padding-bottom: 19px;
+}
+
+.photos {
+  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {

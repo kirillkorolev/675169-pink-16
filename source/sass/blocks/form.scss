@@ -4,8 +4,11 @@
 
   margin: 0;
   padding: 0 20px;
-  padding-bottom: 25px;
+  padding-bottom: 9px;
 
+  &--hidden {
+    display: none;
+  }
 }
 
 .form__name-details {
@@ -32,6 +35,7 @@
     text-align: center;
     padding-bottom: 20px;
   }
+
 }
 
 .form__impressions textarea {
@@ -167,16 +171,24 @@
   left: -70px;
 }
 
+.form__checkbox-label:hover::before {
+  border-color: $dark-navy;
+}
+
+.form__checkbox-label:active::before {
+  border-color: $red;
+}
+
 .form__input--checkbox:checked + label::after {
   content: "";
   position: absolute;
   width: 23px;
   height: 16px;
-  background-image: url("../img/icons/");
+  background-image: url("../../img/icons/icon-yes-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  top: -2px;
-  left: -50px;
+  top: 5px;
+  left: -60px;
 }
 
 .form__radio-item {
@@ -207,6 +219,14 @@
   top: -5px;
 }
 
+.form__radio-label:hover::before {
+  border-color: $dark-navy;
+}
+
+.form__radio-label:active::before {
+  border-color: $red;
+}
+
 .form__input--radio:checked + label::after {
   content: "";
   position: absolute;
@@ -216,4 +236,12 @@
   border-radius: 50%;
   left: -58px;
   top: 7px;
+}
+
+@media (min-width: $title-width) {
+  .form__text {
+    &--hidden {
+      display: block;
+    }
+  }
 }

@@ -3,22 +3,23 @@
   line-height: 26px;
   font-weight: 300;
   padding: 0;
-  margin: 0;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
+  width: 210px;
+  margin: 0 auto;
 }
 
 .advantages__list {
   @include reset-list;
-  background-color: $light-grey;
-  padding-top: 78px;
-
+  padding-top: 88px;
   min-height: 785px;
+  margin-bottoM: 40px;
 
+  //background: linear-gradient(135deg, $white 35px, $light-grey 95%);
   background-image: url("../img/pictures/iphone-screen-mobile@1x.png");
   background-repeat:  no-repeat;
-  background-position:  center 540px;
-  background-size: 155px 280px;
+  background-position:  center 505px;
+  background-size: 155px 320px;
 
   position: relative;
 }
@@ -29,15 +30,15 @@
   font-size: 18px;
   line-height: 10px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 19px;
 }
 
 .advantages__description {
   margin: 0;
   padding: 0;
   text-align: center;
-  padding-bottom: 30px;
-  padding-left: 25px;
+  padding-bottom: 37px;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -56,18 +57,10 @@
   text-decoration: underline;
 }
 
-.advantages__list::before {
-  content: "";
-  background-image: url("../img/style-help/bg-triangle-white.svg");
-  background-size: 100% 35px;
+.advantages__wrapper {
+  background-image: linear-gradient(174deg, $white 0%, $white 35px, $light-grey 35px);
   background-repeat: no-repeat;
-  background-position: 0 -5px;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 35px;
-  left: 0;
-  top: 0;
+  background-position: 0 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,22 +70,33 @@
   }
 
   .advantages__wrapper {
-    background-color: $light-grey;
+    background-image: linear-gradient(176deg, $white 0%, $white 50px, $light-grey 50px);
   }
 
   .advantages__slogan {
+    font-size: 40px;
+    line-height: 55px;
     padding-bottom: 0;
+    margin-bottom: -10px;
+    width: 100%;
+  }
+
+  .advantages__slogan:nth-of-type(2) {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 46px;
   }
 
   .advantages__list {
     min-height: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 320px;
+    padding-left: 329px;
     padding-right: 20px;
+    padding-top: 85px;
     background-image: url("../img/pictures/iphone-screen-3-tablet@1x.png");
     background-size: 268px 480px;
-    background-position: 20px 20px;
+    background-position: 20px 7px;
   }
 
   .advantages__title {
@@ -102,6 +106,8 @@
   .advantages__description {
     text-align: left;
     padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 41px;
   }
 
   .advantages__article {
@@ -114,14 +120,29 @@
     background-image: url("../img/pictures/timer-tablet@1x.png");
     background-size: 238px 276px;
     background-repeat: no-repeat;
-    background-position: 10px 60px;
+    background-position: 0px 20px;
   }
 
   .advantages__article-wrapper {
     width: 310px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 55px;
+    padding-bottom: 125px;
     margin-left: 310px;
+  }
+
+  .advantages__article-title {
+    font-size: 30px;
+    line-height: 36px;
+
+    margin: 0;
+    width: 170px;
+    margin-bottom: 11px;
+  }
+
+  .advantages__text {
+    margin: 0;
+    padding-right: 12px;
+    margin-bottom: 12px;
   }
 }
 
@@ -139,6 +160,8 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 40px;
   }
 
   .advantages__container {
@@ -146,11 +169,15 @@
   }
 
   .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
+    padding-top: 30px;
   }
 
   .advantages__description {
     text-align: center;
+    font-size: 18px;
     line-height: 30px;
   }
 
@@ -158,7 +185,7 @@
     padding-top: 325px;
     background-repeat: no-repeat;
     background-size: 292px 302px;
-    background-position: center 0;
+    background-position: 3px -2px;
   }
 
   .advantages__item:first-child {
@@ -180,6 +207,7 @@
     background-size: 298px 345px;
     background-repeat: no-repeat;
     background-position: 10px 60px;
+
   }
 
   .advantages__article-wrapper {
@@ -187,7 +215,49 @@
     padding-top: 100px;
     padding-bottom: 160px;
     margin-left: 370px;
+  }
+
+  .advantages__slogan:nth-of-type(2) {
+    padding: 0;
+    width: 445px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+
+  .advantages__slogan:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+
+  .advantages__wrapper {
+    background-image: linear-gradient(176deg, $white 0%, $white 97px, $light-grey 97px);
+  }
+
+  .advantages__article-title {
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .advantages__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 0;
+  }
+
+  .advantages__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantahes__container {
+    background-color: $light-grey;
+  }
+  /*
+  .advantages__article-wrapper {
 
   }
-}
 
+  .advantages__article {
+    background-color: $light-grey;
+  }
+  */
+}

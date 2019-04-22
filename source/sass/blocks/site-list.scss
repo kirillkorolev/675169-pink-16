@@ -2,12 +2,17 @@
   text-transform: uppercase;
   font-size: 18px;
   line-height: 32px;
+  font-weight: 700;
   color: $white;
 
   display: block;
-  padding: 25px 20px;
+  padding: 15px 20px;
   text-align: center;
   background-color: $dark-navy;
+}
+
+.site-list {
+  position: relative;
 }
 
 .site-list__item {
@@ -25,13 +30,19 @@
 
   .site-list__item {
     border: none;
+    line-height: 18px;
+
   }
 
   .site-list__link {
+    font-weight: 300;
+    line-height: 18px;
     background-color: inherit;
-    line-height: 32px;
+
     text-transform: none;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

@@ -5,31 +5,32 @@
   background-repeat: no-repeat;
   background-position:  center -70px;
   background-size: 100% auto;
-  padding-top: 425px;
-}
+  padding-top: 491px;
 
-.promotion--main {
-  background-image: url("../img/pictures/iphone-hand-mobile@1x.png"), url("../img/backgrounds/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position:  0 105px, center -70px;
-  background-size: 250px 290px, 100% auto;
+  &--main {
+    background-image: url("../img/pictures/iphone-hand-mobile@1x.png"), url("../img/backgrounds/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position:  -1px 172px, center 0;
+    background-size: 259px 290px, 100% auto;
+    margin-top: -70px;
+  }
 }
 
 .promotion__wrapper {
-  min-height: 270px;
+  min-height: 242px;
   background-color: $dark-navy;
 }
 
 .promotion__button {
   width: 280px;
   color: $white;
-  border: 4px solid $white;
+  border: 3px solid $white;
   border-radius: 30px;
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
 
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -42,7 +43,7 @@
   @include reset-list;
 
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -51,17 +52,17 @@
 
 .promotion__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   text-align: center;
-  padding-left: 40px;
+  padding-left: 31px;
   padding-right: 30px;
-  padding-bottom: 24px;
+  padding-bottom: 29px;
   font-weight: 300;
 }
 
 .promotion__item {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .promotion__title {
@@ -69,14 +70,19 @@
   line-height: 26px;
   text-align: center;
   font-weight: 300;
-  padding: 0 5px;
-  padding-top: 23px;
-  padding-bottom: 97px;
+  padding: 0 10px;
+  padding-top: 32px;
+  padding-bottom: 85px;
 
   margin: 0;
+  margin-bottom: 45px;
 
   &--hide {
     display: none;
+  }
+
+  &--form {
+    padding-bottom: 59px;
   }
 }
 
@@ -86,16 +92,26 @@
 
 @media (min-width: $tablet-width) {
   .promotion__title {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 300;
+    padding-bottom: 36px;
+    width: 190px;
+    margin: 0 auto;
+
     &--hide {
       display: block;
     }
 
-    font-size: 40px;
-    line-height: 45px;
-    font-weight: 300;
-    padding-bottom: 16px;
-    width: 190px;
-    margin: 0 auto;
+    &--mod {
+      text-align: center;
+      width: 495px;
+      font-size: 56px;
+      line-height: 57px;
+      padding-bottom: 142px;
+      padding-top: 0;
+      margin-bottom: 90px;
+    }
   }
 
   .promotion--main {
@@ -104,11 +120,11 @@
 
   .promotion__wrapper {
     width: 620px;
-    min-height: 540px;
+    min-height: 546px;
     margin: 0 auto;
     background-image: url("../img/pictures/iphone-hand-tablet@1x.png");
-    background-size: 700px 545px;
-    background-position: -35px -5px;
+    background-size: 705px 550px;
+    background-position: -42px -4px;
     background-repeat: no-repeat;
     padding-top: 0;
     padding-right: 320px;
@@ -119,20 +135,31 @@
     background-image: url("../img/backgrounds/bg-back-tablet@1x.jpg");
     background-size: 100% 730px;
     background-position: center -110px;
-    padding-top: 80px;
-    margin-bottom: 85px;
+    padding-top: 73px;
+    padding-right: 7px;
+    margin-bottom: 45px;
+
+    &--mod {
+      padding-top: 0;
+    }
+  }
+
+  .promotion__button {
+    width: 300px;
+    margin-bottom: 45px;
+  }
+
+  .promotion__text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .promotion__download-list {
+    margin-bottom: 30px;
   }
 
   .promotion__text {
     font-size: 18px;
-  }
-
-  .promotion__title--mod {
-    text-align: center;
-    width: 495px;
-    font-size: 50px;
-    line-height: 50px;
-    padding-bottom: 127px;
   }
 }
 
@@ -146,41 +173,48 @@
     padding-bottom: 29px;
     background-image: url("../img/pictures/iphone-hand-desktop@1x.png");
     background-size: 100% 550px;
-    background-position: 70px 127px;
+    background-position: 70px 303px;
   }
 
   .promotion {
     background-image: url("../img/backgrounds/bg-back-desktop@1x.jpg");
     background-size: 100% 851px;
-    background-position: center -95px;
+    background-position: center 0;
+    margin-top: -110px;
+    padding-top: 0;
+    margin-bottom: 72px;
   }
 
   .promotion__title {
     font-size: 50px;
     line-height: 58px;
+    padding-top: 125px;
+    padding-bottom: 56px;
   }
 
   .promotion__button {
     font-size: 21px;
     width: 302px;
-    margin-bottom: 60px;
+    margin-bottom: 66px;
   }
 
   .promotion__title {
     width: 302px;
+
+    &--mod {
+      text-align: center;
+      width: 820px;
+      padding-top: 186px;
+      padding-bottom: 86px;
+    }
   }
 
   .promotion__download-list {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
-  .promotion--mod {
-    padding-top: 50px;
-  }
-
-  .promotion__title--mod {
-    text-align: center;
-    width: 820px;
-    padding-bottom: 86px;
+  .promotion__text {
+    padding-bottom: 0;
+    margin-bottom: 93px;
   }
 }
