@@ -10,15 +10,14 @@
 
 .slider__toggle {
   padding: 0;
-  border: 0;
   width: 13px;
   height: 13px;
   cursor: pointer;
   border-radius: 50%;
   border: 3px solid $white;
   background-color: $slider-toggle-grey;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 6px;
+  margin-right: 6px;
 
   &--current {
     background-color: $white;

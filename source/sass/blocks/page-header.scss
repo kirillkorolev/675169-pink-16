@@ -5,32 +5,51 @@
   cursor: pointer;
   padding: 0;
   border: none;
+  position: relative;
 }
 
 .page-header__toggle span {
   position: relative;
+  display: block;
 }
 
-.page-header__toggle span::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 4px;
-  background-color: $white;
-  transform: rotate(45deg);
-  top: 0;
-  left: -10px;
-}
-
+.page-header__toggle span::before,
 .page-header__toggle span::after {
   content: "";
   position: absolute;
-  width: 32px;
+  width: 30px;
   height: 4px;
   background-color: $white;
+  top: -3px;
+  left: -2px;
+}
+
+.page-header__toggle span::before {
+  transform: rotate(45deg);
+}
+
+.page-header__toggle span::after {
   transform: rotate(-45deg);
-  top: 0;
-  left: -10px;
+}
+
+.page-header__logo[href]:hover g,
+.page-header__logo[href]:hover path {
+  fill: $red;
+}
+
+.page-header__logo[href]:active g,
+.page-header__logo[href]:active path {
+  fill: $red-active;
+}
+
+.page-header__toggle span:hover::before,
+.page-header__toggle span:hover::after {
+  background-color: $red;
+}
+
+.page-header__toggle span:active::before,
+.page-header__toggle span:active::after {
+  background-color: $red-active;
 }
 
 .page-header {
@@ -41,7 +60,7 @@
   &--menu-closed {
     position: relative;
     z-index: 10;
-    background-color: rgba(29, 38, 50, 0.3);
+    background-color: $transparent-grey;
 
     .page-header__container {
       border: none;
@@ -83,15 +102,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
 .page-header__container {
   margin: 0 auto;
   display: flex;
@@ -129,15 +139,14 @@
     padding: 27px 20px 42px;
   }
 
-  .page-header__toggle::before,
-  .page-header__toggle::after {
-    top: 26px;
+  .page-header__toggle {
+    margin-top: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-color: rgba(29, 38, 50, 0.3);
+    background-color: $transparent-grey;
     position: relative;
     z-index: 5;
 
@@ -166,7 +175,6 @@
     padding: 0;
     margin-top: 27px;
     margin-bottom: 44px;
-
   }
 
   .page-header__toggle {

@@ -11,13 +11,13 @@
 
 .advantages__list {
   @include reset-list;
-  padding-top: 88px;
+  padding: 83px 20px 0 20px;
   min-height: 785px;
-  margin-bottoM: 40px;
+  margin-bottom: 40px;
 
   background-image: url("../img/pictures/iphone-screen-mobile@1x.png");
-  background-repeat:  no-repeat;
-  background-position:  center 505px;
+  background-repeat: no-repeat;
+  background-position: center 505px;
   background-size: 155px 320px;
 
   position: relative;
@@ -27,18 +27,16 @@
   padding: 0;
   margin: 0;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 18px;
   text-align: center;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
 }
 
 .advantages__description {
   margin: 0;
   padding: 0;
   text-align: center;
-  padding-bottom: 37px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 32px;
 }
 
 .advantages__article {
@@ -57,7 +55,7 @@
 }
 
 .advantages__wrapper {
-  background-image: linear-gradient(174deg, $white 0%, $white 35px, $light-grey 35px);
+  background-image: linear-gradient(176deg, $white 0%, $white 8%, $light-grey 8%);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -69,7 +67,7 @@
   }
 
   .advantages__wrapper {
-    background-image: linear-gradient(176deg, $white 0%, $white 50px, $light-grey 50px);
+    background-image: linear-gradient(176deg, $white 0%, $white 10%, $light-grey 10%);
   }
 
   .advantages__slogan {
@@ -78,6 +76,11 @@
     padding-bottom: 0;
     margin-bottom: -10px;
     width: 100%;
+  }
+
+  .advantages__title {
+    padding-bottom: 12px;
+    text-align: left;
   }
 
   .advantages__slogan:nth-of-type(2) {
@@ -91,22 +94,16 @@
     display: flex;
     flex-direction: column;
     padding-left: 329px;
-    padding-right: 20px;
-    padding-top: 85px;
     background-image: url("../img/pictures/iphone-screen-3-tablet@1x.png");
     background-size: 268px 480px;
     background-position: 20px 7px;
-  }
-
-  .advantages__title {
-    text-align: left;
   }
 
   .advantages__description {
     text-align: left;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 41px;
+    padding-bottom: 42px;
   }
 
   .advantages__article {
@@ -119,7 +116,7 @@
     background-image: url("../img/pictures/timer-tablet@1x.png");
     background-size: 238px 276px;
     background-repeat: no-repeat;
-    background-position: 0px 20px;
+    background-position: 0 20;
   }
 
   .advantages__article-wrapper {
@@ -160,7 +157,7 @@
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 0;
-    padding-bottom: 40px;
+    padding-bottom: 18px;
   }
 
   .advantages__container {
@@ -171,14 +168,16 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 31px;
+    padding-right: 37px;
+    padding-bottom: 24px;
   }
 
   .advantages__description {
     text-align: center;
     font-size: 18px;
     line-height: 30px;
-    padding-left: 30px;
+    padding-left: 1px;
     padding-right: 30px;
   }
 
@@ -207,14 +206,13 @@
     background-image: url("../img/pictures/timer-desktop@1x.png");
     background-size: 298px 345px;
     background-repeat: no-repeat;
-    background-position: 10px 60px;
-
+    background-position: 2px 5px;
   }
 
   .advantages__article-wrapper {
     width: 570px;
     padding-top: 100px;
-    padding-bottom: 160px;
+    padding-bottom: 141px;
     margin-left: 370px;
   }
 
@@ -230,18 +228,20 @@
   }
 
   .advantages__wrapper {
-    background-image: linear-gradient(176deg, $white 0%, $white 97px, $light-grey 97px);
+    background-image: linear-gradient(176deg, $white 0%, $white 13%, $light-grey 13%);
   }
 
   .advantages__article-title {
     line-height: 30px;
     width: 100%;
+    margin-bottom: 24px;
   }
 
   .advantages__text {
     font-size: 18px;
     line-height: 30px;
     padding-right: 0;
+    margin-bottom: 29px;
   }
 
   .advantages__link {
@@ -251,19 +251,6 @@
 
   .advantahes__container {
     background-color: $light-grey;
+    margin-bottom: 183px;
   }
-
-  .advantages__item:nth-child(2) .advantages__title {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  /*
-  .advantages__article-wrapper {
-
-  }
-
-  .advantages__article {
-    background-color: $light-grey;
-  }
-  */
 }

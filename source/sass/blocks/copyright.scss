@@ -1,6 +1,6 @@
 .copyright__link {
   fill: $red;
-  padding: 0 18px;
+  margin: 0 18px;
 }
 
 .copyright {
@@ -8,4 +8,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding: 0;
+    margin-left: 20px;
+  }
 }

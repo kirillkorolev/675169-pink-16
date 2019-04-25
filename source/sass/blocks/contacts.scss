@@ -1,6 +1,6 @@
 .contacts__text {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 29px;
   font-weight: 300;
   text-align: center;
 
@@ -25,6 +25,8 @@
 .contacts__phone,
 .contacts__mail,
 .contacts__address {
+  font-size: 24px;
+  line-height: 26px;
   color: $red;
   text-align: center;
   font-weight: 300;
@@ -33,6 +35,7 @@
 
 .contacts__address {
   font-style: normal;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {

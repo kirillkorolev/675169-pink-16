@@ -15,10 +15,13 @@
   background-color: $dark-navy;
   border-left: 2px solid $border-grey;
   border-right: 2px solid $border-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rates__list tr {
-  width:280px;
+  width: 280px;
   border-right: 2px solid $border-grey;
 }
 
@@ -53,14 +56,8 @@
   display: none;
 }
 
-.rates__list th {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 @media (min-width: $tablet-width) {
   .rates {
-    background-image: linear-gradient(176deg, $white 0%, $white 52px, $light-grey 52px);
+    background-image: linear-gradient(176deg, $white 0%, $white 15%, $light-grey 15%);
   }
 }

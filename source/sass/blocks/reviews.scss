@@ -11,6 +11,7 @@
 
 .reviews__item {
   display: none;
+
   &--current {
     display: block;
   }
@@ -35,11 +36,11 @@
 }
 
 @media (min-width: $tablet-width) {
-.reviews__list {
-  width: 620px;
-  padding: 0;
-  margin-bottom: 0;
-}
+  .reviews__list {
+    width: 620px;
+    padding: 0;
+    margin-bottom: 0;
+  }
 
   .reviews__item {
     &--current {
