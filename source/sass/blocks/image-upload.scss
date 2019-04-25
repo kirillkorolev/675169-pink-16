@@ -4,9 +4,10 @@
   margin: 0;
   width: 100%;
   background-color: $white;
+}
+
+.image-upload__text:nth-of-type(2) {
   padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .image-upload__list {
@@ -62,4 +63,20 @@
 
 .image-upload__range-input {
   background-color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .image-upload__text {
+    font-size: 18px;
+  }
+
+  .image-upload__text:nth-of-type(2) {
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .image-upload__form {
+    width: 940px;
+  }
 }

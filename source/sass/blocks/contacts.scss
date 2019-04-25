@@ -31,6 +31,10 @@
   margin-bottom: 5px;
 }
 
+.contacts__address {
+  font-style: normal;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     width: 620px;

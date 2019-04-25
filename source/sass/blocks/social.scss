@@ -7,6 +7,13 @@
 }
 
 .social__item {
+
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.social__link {
+  fill: $red;
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -14,10 +21,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
-.social__link {
-  fill: $red;
 }
