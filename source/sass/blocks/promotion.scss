@@ -60,6 +60,16 @@
   margin-right: auto;
 }
 
+.promotion__button:hover {
+  background-color: $white;
+  color: $red;
+}
+
+.promotion__button:active {
+  background-color: $white;
+  color: $red-active;
+}
+
 .promotion__download-list {
   @include reset-list;
 

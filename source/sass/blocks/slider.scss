@@ -8,6 +8,14 @@
   margin-bottom: 40px;
 }
 
+.slider__toggle:not(.slider__toggle--current):hover {
+  background-color: $slider-hover-blue;
+}
+
+.slider__toggle:not(.slider__toggle--current):active {
+  background-color: $slider-active-grey;
+}
+
 .slider__toggle {
   padding: 0;
   width: 13px;

@@ -39,16 +39,18 @@
 
 .page-header__logo[href]:active g,
 .page-header__logo[href]:active path {
-  fill: $red-active;
+  fill: $active-menu-color;
 }
 
-.page-header__toggle span:hover::before,
-.page-header__toggle span:hover::after {
+.page-header__toggle:hover span::before,
+.page-header__toggle:hover span::after,
+.page-header__toggle:hover span {
   background-color: $red;
 }
 
-.page-header__toggle span:active::before,
-.page-header__toggle span:active::after {
+.page-header__toggle:active span::before,
+.page-header__toggle:active span::after,
+.page-header__toggle:active span {
   background-color: $red-active;
 }
 
@@ -80,27 +82,35 @@
       background-color: $white;
     }
 
-    span::before {
+    span::before,
+    span::after {
       transform: none;
       width: 57px;
-      top: 10px;
       left: 0;
+    }
+
+    span::before {
+      top: 10px;
     }
 
     span::after {
-      width: 57px;
-      transform: none;
       top: -10px;
-      left: 0;
-    }
-  }
-
-  &--menu-opened {
-    .main-nav {
-      display: block;
     }
   }
 }
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header--nojs .main-nav {
+  display: block;
+}
+
+.page-header--nojs .page-header__container {
+  background-color: $dark-navy;
+}
+
 
 .page-header__container {
   margin: 0 auto;
