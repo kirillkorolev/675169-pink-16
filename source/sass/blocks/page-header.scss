@@ -136,13 +136,16 @@
     }
 
     &--menu-opened {
+      position: relative;
+      min-height: 70px;
+
       .page-header__wrapper {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 20;
         width: 100%;
-        min-height: 325px;
+        background-color: $dark-navy;
       }
 
       .page-header__container {
@@ -153,6 +156,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 110px;
+  }
+
   .page-header__logo-image {
     &--mobile {
       display: none;
