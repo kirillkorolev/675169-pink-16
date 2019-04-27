@@ -170,10 +170,6 @@
     padding-bottom: 60px;
   }
 
-  .advantages__container {
-    width: 940px;
-  }
-
   .advantages__title {
     font-size: 30px;
     line-height: 30px;
@@ -291,8 +287,13 @@
     line-height: 30px;
   }
 
-  .advantahes__container {
+  .advantages__container {
+    width: 940px;
     background-color: $light-grey;
-    margin-bottom: 185px;
   }
+
+  .advantages__article-container {
+    background-color: $light-grey;
+  }
+
 }
