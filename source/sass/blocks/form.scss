@@ -113,6 +113,21 @@
   margin-bottom: 30px;
 }
 
+.form__button:hover {
+  background-color: $green-hover;
+  color: $active-menu-color;
+}
+
+.form__button:active {
+  background-color: $green-hover;
+}
+
+.form__button:disabled {
+  background-color: $border-grey;
+  color: $white;
+  border: none;
+}
+
 .form__wrapper:nth-child(even) {
   background-color: $light-grey;
   margin-bottom: 33px;
