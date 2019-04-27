@@ -6,7 +6,7 @@
   padding: 0 20px;
   margin: 0 auto;
 
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .reviews__item {
@@ -23,7 +23,7 @@
   font-weight: 700;
   color: $black;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .reviews__text {
@@ -83,5 +83,19 @@
 
   .reviews__author-description {
     font-size: 18px;
+  }
+
+  .reviews__text {
+    margin-bottom: 36px;
+  }
+
+  .reviews {
+    padding-bottom: 39px;
+  }
+
+  .reviews__item {
+    &--current {
+      margin-bottom: 0;
+    }
   }
 }

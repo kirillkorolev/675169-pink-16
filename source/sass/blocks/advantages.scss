@@ -9,15 +9,19 @@
   margin: 0 auto;
 }
 
+.advantages__slogan:nth-of-type(2) {
+  padding-bottom: 0;
+}
+
 .advantages__list {
   @include reset-list;
-  padding: 83px 20px 0 20px;
-  min-height: 785px;
-  margin-bottom: 40px;
+  padding: 119px 20px 0 20px;
+  min-height: 820px;
+  margin-bottom: 42px;
 
   background-image: url("../img/pictures/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center 505px;
+  background-position: center 542px;
   background-size: 155px 320px;
 
   position: relative;
@@ -36,7 +40,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
 }
 
 .advantages__article {
@@ -55,7 +59,7 @@
 }
 
 .advantages__wrapper {
-  background-image: linear-gradient(176deg, $white 0%, $white 8%, $light-grey 8%);
+  background-image: linear-gradient(175deg, $white 0%, $white 8%, $light-grey 8%);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -79,14 +83,14 @@
   }
 
   .advantages__title {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     text-align: left;
   }
 
   .advantages__slogan:nth-of-type(2) {
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 46px;
+    padding-bottom: 42px;
   }
 
   .advantages__list {
@@ -96,14 +100,20 @@
     padding-left: 329px;
     background-image: url("../img/pictures/iphone-screen-3-tablet@1x.png");
     background-size: 268px 480px;
-    background-position: 20px 7px;
+    background-position: 20px 13px;
+    padding-top: 84px;
+    margin-bottom: 60px;
   }
 
   .advantages__description {
     text-align: left;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 42px;
+    padding-bottom: 0;
+  }
+
+  .advantages__item {
+    margin-bottom: 38px;
   }
 
   .advantages__article {
@@ -121,24 +131,24 @@
 
   .advantages__article-wrapper {
     width: 310px;
-    padding-top: 55px;
+    padding-top: 40px;
     padding-bottom: 125px;
     margin-left: 310px;
   }
 
   .advantages__article-title {
+    text-align: left;
     font-size: 30px;
     line-height: 36px;
-
+    padding-right: 140px;
     margin: 0;
-    width: 170px;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
   }
 
   .advantages__text {
     margin: 0;
     padding-right: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
 }
 
@@ -157,7 +167,7 @@
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 0;
-    padding-bottom: 18px;
+    padding-bottom: 60px;
   }
 
   .advantages__container {
@@ -169,7 +179,7 @@
     line-height: 30px;
     text-align: center;
     padding-top: 31px;
-    padding-right: 37px;
+
     padding-bottom: 24px;
   }
 
@@ -177,27 +187,58 @@
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .advantages__item:nth-child(1) .advantages__description {
+    padding-left: 31px;
+    padding-right: 73px;
+  }
+
+  .advantages__item:nth-child(1) .advantages__title {
+    padding-left: 31px;
+    padding-right: 82px;
+  }
+
+  .advantages__item:nth-child(2) .advantages__description {
     padding-left: 1px;
-    padding-right: 30px;
+    padding-right: 69px;
+  }
+
+  .advantages__item:nth-child(2) .advantages__title {
+    padding-left: 15px;
+    padding-right: 82px;
+  }
+
+  .advantages__item:nth-child(3) .advantages__description {
+    padding-left: 5px;
+    padding-right: 28px;
+  }
+
+  .advantages__item:nth-child(3) .advantages__title {
+    padding-left: 11px;
+    padding-right: 36px;
   }
 
   .advantages__item {
     padding-top: 325px;
     background-repeat: no-repeat;
     background-size: 292px 302px;
-    background-position: 3px -2px;
+    margin-bottom: 0;
   }
 
   .advantages__item:first-child {
     background-image: url("../img/pictures/iphone-screen-1-desktop@1x.png");
+    background-position: 3px -2px;
   }
 
   .advantages__item:nth-child(2) {
     background-image: url("../img/pictures/iphone-screen-2-desktop@1x.png");
+    background-position: -18px -2px;
   }
 
   .advantages__item:last-child {
     background-image: url("../img/pictures/iphone-screen-3-desktop@1x.png");
+    background-position: -13px -2px;
   }
 
   .advantages__article {
@@ -212,8 +253,8 @@
   .advantages__article-wrapper {
     width: 570px;
     padding-top: 100px;
-    padding-bottom: 141px;
-    margin-left: 370px;
+    padding-bottom: 113px;
+    margin-left: 365px;
   }
 
   .advantages__slogan:nth-of-type(2) {
@@ -235,13 +276,14 @@
     line-height: 30px;
     width: 100%;
     margin-bottom: 24px;
+    padding-right: 0;
   }
 
   .advantages__text {
     font-size: 18px;
     line-height: 30px;
-    padding-right: 0;
-    margin-bottom: 29px;
+    padding-right: 30px;
+    margin-bottom: 30px;
   }
 
   .advantages__link {
@@ -251,6 +293,6 @@
 
   .advantahes__container {
     background-color: $light-grey;
-    margin-bottom: 183px;
+    margin-bottom: 185px;
   }
 }
