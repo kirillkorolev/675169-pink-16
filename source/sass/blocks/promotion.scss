@@ -98,19 +98,27 @@
 
 @media (min-width: $tablet-width) {
   .promotion__title {
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 50px;
+    line-height: 59px;
     font-weight: 300;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 0;
+    padding-bottom: 138px;
 
     &--main {
+      font-size: 40px;
+      line-height: 47px;
       display: block;
       padding: 0;
+      padding-top: 0;
       padding-left: 30px;
       padding-right: 30px;
       margin-bottom: 32px;
+    }
+
+    &--form {
+      padding-bottom: 80px;
     }
   }
 
@@ -118,8 +126,8 @@
     background-image: url("../img/backgrounds/bg-back-tablet@1x.jpg");
     background-size: 100% 730px;
     background-position: center 0;
-    padding-top: 205px;
-    margin-bottom: 45px;
+    padding-top: 181px;
+    margin-bottom: 92px;
     margin-top: -110px;
 
     &--main {
