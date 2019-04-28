@@ -41,21 +41,15 @@
 }
 
 .contacts__phone:hover,
-.contacts__mail:hover,
-.contacts__address:hover {
+.contacts__mail:hover {
   color: $dark-navy;
   text-decoration: underline;
 }
 
 .contacts__phone:active,
-.contacts__mail:active,
-.contacts__address:active {
+.contacts__mail:active {
   color: $header-dekstop-navy;
   text-decoration: none;
-}
-
-.contacts__phone {
-  margin-bottom: 5px;
 }
 
 .contacts__phone {

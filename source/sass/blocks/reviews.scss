@@ -53,22 +53,18 @@
   top: 214px;
 }
 
-.reviews__left-button span,
-.reviews__right-button span {
-  display: none;
-}
-
 .reviews__left-button {
-  left: 248px;
+  left: 9px;
 }
 
 .reviews__right-button {
-  right: 248px;
+  right: 9px;
 }
 
 .reviews__right-button span,
 .reviews__left-button span {
   position: relative;
+  display: none;
 }
 
 .reviews__left-button span::after,
@@ -94,7 +90,7 @@
   bottom: -8px;
 }
 
-.reviews__right-button span::before  {
+.reviews__right-button span::before {
   transform: rotate(45deg);
   left: -3px;
   top: -14px;
@@ -106,6 +102,19 @@
   bottom: -8px;
 }
 
+.reviews__left-button:hover span::after,
+.reviews__left-button:hover span::before,
+.reviews__right-button:hover span::after,
+.reviews__right-button:hover span::before {
+  background-color: $arrow-hover-grey;
+}
+
+.reviews__left-button:active span::after,
+.reviews__left-button:active span::before,
+.reviews__right-button:active span::after,
+.reviews__right-button:active span::before {
+  background-color: $slider-active-grey;
+}
 
 @media (min-width: $tablet-width) {
   .reviews__list {
@@ -163,7 +172,7 @@
 
   .reviews {
     padding-top: 185px;
-    padding-bottom: 39px;
+    padding-bottom: 31px;
     background-image: url("../img/icons/icon-quotes.svg");
     background-position: center 72px;
     background-repeat: no-repeat;
@@ -179,6 +188,5 @@
   .reviews__left-button span,
   .reviews__right-button span {
     display: block;
-}
-
+  }
 }

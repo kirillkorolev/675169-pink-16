@@ -8,14 +8,12 @@
 }
 
 .filters__item {
+  margin-left: 21px;
+  margin-right: 20px;
+
   &--current .filters__icon {
     fill: $red;
   }
-}
-
-.filters__item {
-  margin-left: 21px;
-  margin-right: 20px;
 }
 
 .filters__radio-label {
