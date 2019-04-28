@@ -8,10 +8,16 @@
 }
 
 .filters__item {
-  padding: 0 17px;
-
+  margin-left: 21px;
+  margin-right: 20px;
 
   &--current .filters__icon {
     fill: $red;
   }
+}
+
+.filters__radio-label {
+  display: block;
+  width: 46px;
+  height: 46px;
 }

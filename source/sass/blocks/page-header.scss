@@ -1,4 +1,61 @@
+.page-header__toggle {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.page-header__toggle span {
+  position: relative;
+  display: block;
+}
+
+.page-header__toggle span::before,
+.page-header__toggle span::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: $white;
+  top: -3px;
+  left: -2px;
+}
+
+.page-header__toggle span::before {
+  transform: rotate(45deg);
+}
+
+.page-header__toggle span::after {
+  transform: rotate(-45deg);
+}
+
+.page-header__logo[href]:hover g,
+.page-header__logo[href]:hover path {
+  fill: $red;
+}
+
+.page-header__logo[href]:active g,
+.page-header__logo[href]:active path {
+  fill: $active-menu-color;
+}
+
+.page-header__toggle:hover span::before,
+.page-header__toggle:hover span::after,
+.page-header__toggle:hover span {
+  background-color: $red;
+}
+
+.page-header__toggle:active span::before,
+.page-header__toggle:active span::after,
+.page-header__toggle:active span {
+  background-color: $red-active;
+}
+
 .page-header {
+  display: block;
   background-color: $dark-navy;
 }
 
@@ -6,45 +63,12 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 20px 22px;
+  padding: 20px 20px;
   border-bottom: 1px solid $black;
 }
 
 .page-header__logo {
   fill: $white;
-}
-
-.page-header__toggle {
-  fill: $white;
-  background: transparent;
-  border: none;
-}
-
-.page-header__toggle {
-  font-size: 0;
-  width: 27px;
-  height: 27px;
-  position: relative;
-}
-
-.page-header__toggle::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 3px;
-  background-color: $white;
-  transform: rotate(45deg);
-  left: 5px;
-}
-
-.page-header__toggle::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 3px;
-  background-color: $white;
-  transform: rotate(-45deg);
-  left: 5px;
 }
 
 .page-header__logo-image {
@@ -57,13 +81,87 @@
   }
 }
 
-@media (min-width: $mobile-width) {
+@media (max-width: $mobile-width-only) {
   .page-header {
-    display: block;
+    &--menu-closed {
+      position: relative;
+      z-index: 10;
+      background-color: $transparent-grey;
+
+      .page-header__container {
+        border: none;
+      }
+
+      .page-header__toggle {
+        width: 50px;
+        display: block;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      span {
+        display: block;
+        height: 4px;
+        background-color: $white;
+      }
+
+      span::before,
+      span::after {
+        transform: none;
+        width: 50px;
+        left: 0;
+      }
+
+      span::before {
+        top: 10px;
+      }
+
+      span::after {
+        top: -10px;
+      }
+    }
+
+    &--menu-opened {
+      position: relative;
+      min-height: 70px;
+
+      .page-header__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        width: 100%;
+        background-color: $dark-navy;
+      }
+
+      .page-header__container {
+        background-color: $dark-navy;
+      }
+    }
+
+    &--nojs {
+      .page-header__toggle {
+        display: none;
+      }
+
+      .main-nav {
+        display: block;
+      }
+
+      .page-header__container {
+        background-color: $dark-navy;
+      }
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 110px;
+  }
+
   .page-header__logo-image {
     &--mobile {
       display: none;
@@ -73,9 +171,29 @@
       display: block;
     }
   }
+
+  .page-header__container {
+    padding: 27px 20px 42px;
+  }
+
+  .page-header__toggle {
+    margin-top: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    background-color: $transparent-grey;
+    position: relative;
+    z-index: 5;
+
+    &--menu-closed {
+      .main-nav {
+        display: block;
+      }
+    }
+  }
+
   .page-header__logo-image {
     &--tablet {
       display: none;
@@ -91,8 +209,9 @@
     display: block;
     margin: 0;
     border: none;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    margin-top: 28px;
+    margin-bottom: 40px;
   }
 
   .page-header__toggle {

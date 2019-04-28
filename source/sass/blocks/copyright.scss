@@ -1,11 +1,37 @@
 .copyright__link {
   fill: $red;
-  padding: 0 18px;
+  margin-left: 14px;
+  margin-top: 7px;
 }
 
 .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+}
+
+.copyright__link:hover path {
+  fill: $dark-navy;
+}
+
+.copyright__link:active path {
+  fill: $slider-toggle-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding: 0;
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }
