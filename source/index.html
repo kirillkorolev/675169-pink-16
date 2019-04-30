@@ -244,7 +244,11 @@
 
       </section>
       <section class="map">
-        <img class="map__image" src="./img/backgrounds/bg-map-mobile@1x.png" width="320" height="645" alt="расположение на карте">
+        <picture>
+          <source media="(min-width: 960px)" srcset="./img/backgrounds/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="./img/backgrounds/bg-map-tablet@1x.jpg 1x, ./img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="./img/backgrounds/bg-map-mobile@1x.png" srcset="./img/bg-map-mobile@2x.jpg 2x" alt="расположение на карте">
+        </picture>
       </section>
     </main>
 

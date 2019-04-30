@@ -306,7 +306,7 @@
     padding: 0;
   }
 
-  .form__item label {
+  .form__name-details label {
     padding: 0;
     margin-right: 17px;
   }
@@ -318,6 +318,8 @@
   .form__name-details .form__input {
     width: 100%;
     margin-bottom: 0;
+    padding-left: 21px;
+    padding-top: 13px;
   }
 
   .form__name-details .form__item:nth-of-type(1),
@@ -341,12 +343,6 @@
     padding: 0;
     background-color: $white;
     margin-bottom: 57px;
-  }
-
-  .form__input {
-    padding-left: 15px;
-    padding-top: 14px;
-    margin-bottom: 17px;
   }
 
   .form__radio-list {
@@ -378,6 +374,7 @@
 
   .form__wrapper:nth-of-type(3) {
     order: 2;
+    margin-bottom: 56px;
   }
 
   .form__wrapper:nth-of-type(3) legend {
@@ -387,6 +384,8 @@
   .form__wrapper:nth-of-type(2) {
     order: 3;
     background-color: $white;
+    padding-top: 0;
+    margin-bottom: 55px;
   }
 
   .form__wrapper:nth-of-type(5) {
@@ -408,11 +407,19 @@
 
   .form__contact-details {
     border: 2px solid $border-grey;
-    padding: 36px 57px 22px 59px;
+    padding: 36px 57px 33px 59px;
   }
 
   .form__contact-details .form__input {
     width: 100%;
+    padding-left: 18px;
+    padding-top: 16px;
+    margin-bottom: 17px;
+  }
+
+  .form__contact-details label {
+    padding-left: 18px;
+    padding-bottom: 0;
   }
 
   .form__contact-details .form__item:nth-of-type(1) {
@@ -421,7 +428,7 @@
 
   .form__checkbox {
     border: 2px solid $border-grey;
-    padding: 44px 60px 48px 60px;
+    padding: 49px 60px 53px 47px;
   }
 
   .form__checkbox-item {
@@ -429,7 +436,15 @@
   }
 
   .form__checkbox-item:not(:last-child) {
-    margin-bottom: 42px;
+    margin-bottom: 52px;
+  }
+
+  .form__checkbox-label::before {
+    left: -60px;
+  }
+
+  .form__input--checkbox:checked + label::after {
+    left: -49px;
   }
 
   .form__impressions .form__item {

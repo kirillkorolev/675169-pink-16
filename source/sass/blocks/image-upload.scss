@@ -7,7 +7,7 @@
 }
 
 .image-upload__text:nth-of-type(2) {
-  padding-bottom: 44px;
+  padding-bottom: 41px;
 }
 
 .image-upload__list {
@@ -64,7 +64,7 @@
     color: $dark-navy;
     border-color: $dark-navy;
     opacity: 0.1;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
   }
 
   &--cancel:hover {
@@ -86,6 +86,10 @@
   margin-bottom: 19px;
 }
 
+.image-upload__editors {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .image-upload__text {
     font-size: 18px;
@@ -101,6 +105,15 @@
     &--post {
       margin-bottom: 22px;
     }
+  }
+
+  .image-upload__list,
+  .image-upload__range {
+    display: none;
+  }
+
+  .image-upload__editors {
+    display: block;
   }
 }
 

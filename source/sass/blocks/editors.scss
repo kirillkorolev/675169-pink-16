@@ -1,0 +1,23 @@
+.editors__list {
+  @include reset-list;
+
+  padding-left: 27px;
+  padding-right: 17px;
+}
+
+.editors__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editors__item:nth-child(2) {
+  border-top: 2px solid #e9ebec;
+  border-bottom: 2px solid #e9ebec;
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+
+.editors__item:last-child {
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
