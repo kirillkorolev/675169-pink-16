@@ -21,3 +21,25 @@
   padding-top: 27px;
   padding-bottom: 20px;
 }
+
+
+@media (min-width: $desktop-width) {
+  .editors__list {
+    padding: 0;
+  }
+
+  .editors__item:first-child {
+    padding-bottom: 1px;
+  }
+
+  .editors__item:nth-child(2) {
+    padding-top: 19px;
+    padding-bottom: 9px;
+  }
+
+  .editors__item:last-child {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 8px;
+  }
+}

@@ -37,10 +37,6 @@
   }
 }
 
-.reviews {
-  position: relative;
-}
-
 .reviews__left-button,
 .reviews__right-button {
   border: none;
@@ -50,7 +46,7 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 214px;
+  top: 30px;
 }
 
 .reviews__left-button {
@@ -192,5 +188,11 @@
   .reviews__left-button span,
   .reviews__right-button span {
     display: block;
+  }
+
+  .reviews__test {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
   }
 }

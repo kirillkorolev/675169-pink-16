@@ -1,0 +1,30 @@
+.modal {
+  width: $mobile-width;
+  padding: 45px 20px 50px 20px;
+}
+
+.modal__title {
+  font-size: 18px;
+  color: $black;
+  text-align: center;
+  margin: 0;
+}
+
+.modal__text {
+  text-align: center;
+  margin: 0;
+}
+
+.modal__button {
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: $green;
+  padding: 0 20px;
+}
