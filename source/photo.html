@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <script src="./js/picturefill.min.js" async></script>
   </head>
   <body>
 
@@ -261,6 +262,9 @@
         <form class="image-upload__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="image-upload__text">Затмите их всех!</p>
           <p class="image-upload__text">Выкладывайте все, что накопилось в телефоне!</p>
+
+          <div class="image-upload__wrapper">
+
           <picture>
             <source media="(min-width: 960px)" srcset="./img/pictures/photo-road-desktop@1x.jpg 1x, ./img/photo-road-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="./img/pictures/photo-road-tablet@1x.jpg 1x, ./img/photo-road-tablet@2x.jpg 2x">
@@ -301,7 +305,7 @@
           <div class="image-upload__range">
             <input class="image-upload__range-input" type="range" name="range">
           </div>
-
+          <div class="image-upload__container">
           <div class="image-upload__editors editors">
             <ul class="editors__list">
               <li class="editors__item">
@@ -332,13 +336,15 @@
                 </div>
               </li>
             </ul>
-
           </div>
+
 
           <div class="image-upload__buttons-container">
             <button class="image-upload__button image-upload__button--post" type="submit">Запостить</button>
             <button class="image-upload__button image-upload__button--cancel" type="reset">Отмена</button>
           </div>
+        </div>
+        </div>
         </form>
         </div>
       </section>

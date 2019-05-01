@@ -227,13 +227,19 @@
     padding-top: 178px;
     padding-bottom: 102px;
 
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 185px;
+    padding-right: 185px;
 
     &--main {
       padding: 0;
       text-align: center;
       margin-bottom: 51px;
+    }
+
+    &--form {
+      padding-left: 10px;
+      padding-bottom: 101px;
+      padding-right: 10px;
     }
   }
 

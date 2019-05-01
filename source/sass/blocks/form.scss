@@ -36,8 +36,9 @@
   padding-right: 20px;
 }
 
-.form__impressions label {
-  padding-left: 49px;
+.form__impressions .form__legend {
+  padding-left: 20px;
+  padding-bottom: 15px;
 }
 
 .form__item {
@@ -155,7 +156,7 @@
 }
 
 .form__wrapper:nth-of-type(5) {
-  margin-bottom: 52px;
+  margin-bottom: 49px;
 }
 
 .form__wrapper fieldset {
@@ -285,6 +286,10 @@
   display: none;
 }
 
+.form__note span {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form__text {
     font-size: 18px;
@@ -390,6 +395,7 @@
 
   .form__wrapper:nth-of-type(5) {
     order: 5;
+    margin-bottom: 63px;
   }
 
   .form__footer {
@@ -450,12 +456,21 @@
   .form__impressions .form__item {
     display: flex;
     flex-direction: column;
+  }
+
+  .form__impressions {
     border: 2px solid $border-grey;
+    padding: 34px 60px 43px 60px;
   }
 
   .form__impressions textarea {
     width: 500px;
     margin: 0 auto;
+    padding-top: 16px;
+  }
+
+  .form__impressions .form__legend {
+    padding-bottom: 0;
   }
 
   .form__button {
@@ -465,5 +480,93 @@
 
   .form__note {
     margin-bottom: 0;
+  }
+
+  .form {
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form__wrapper:nth-of-type(1) {
+    width: 435px;
+  }
+
+  .form__wrapper:nth-of-type(4) {
+    width: 432px;
+  }
+
+  .form__wrapper .form__checkbox,
+  .form__wrapper .form__impressions,
+  .form__wrapper .form__contact-details {
+    width: 940px;
+  }
+
+  .form__checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__wrapper .form__name-details,
+  .form__wrapper .form__system-details {
+    width: 436px;
+    margin: 0;
+  }
+
+  .form__name-details .form__item:first-child {
+    padding-top: 13px;
+  }
+
+  .form__name-details label {
+    margin-right: 20px;
+  }
+
+  .form__system-details .form__legend {
+    padding-left: 15px;
+  }
+
+  .form__radio-list {
+    padding-left: 62px;
+    padding-top: 49px;
+  }
+
+  .form__wrapper .form__contact-details {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__wrapper fieldset {
+    margin: 0;
+  }
+
+  .form__contact-details .form__item {
+    width: 376px;
+    margin: 0;
+  }
+
+  .form__impressions textarea {
+    width: 820px;
+  }
+
+  .form__footer {
+    width: 920px;
+    margin: 0;
+  }
+
+  .form__note span {
+    display: inline-block;
+    vertical-align: top;
   }
 }

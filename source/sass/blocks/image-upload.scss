@@ -105,6 +105,10 @@
     &--post {
       margin-bottom: 22px;
     }
+
+    &--cancell {
+      margin-bottom: 0;
+    }
   }
 
   .image-upload__list,
@@ -114,6 +118,25 @@
 
   .image-upload__editors {
     display: block;
+  }
+
+  .image-upload__wrapper {
+    display: flex;
+    padding: 100px 20px 53px 20px;
+    justify-content: space-between;
+  }
+
+  .image-upload__form {
+    width: 660px;
+  }
+
+  .image-upload__current-image {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .image-upload__container {
+    width: 300px;
   }
 }
 

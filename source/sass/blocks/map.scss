@@ -1,12 +1,12 @@
 .map {
-
-  max-height: 200px;
-  overflow: hidden;
   position: relative;
+  text-align: center;
 }
 
 .map__image {
-  margin-top: -445px;
+  width: $mobile-width;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .map::before {
@@ -15,10 +15,34 @@
   background-size: 100% 35px;
   background-position: 0 -1px;
   background-repeat: no-repeat;
-  display: block;
+
+  //display: block;
   position: absolute;
   width: 100%;
   height: 35px;
   left: 0;
   top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .map::before {
+    height: 67px;
+    background-size: 100% 70px;
+  }
+
+  .map__image {
+    width: $tablet-width;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .map::before {
+    height: 127px;
+    background-size: 100% 102px;
+  }
+
+  .map__image {
+    width: $desktop-width;
+  }
 }

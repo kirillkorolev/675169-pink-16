@@ -1,8 +1,10 @@
 
 .rates {
-  background-image: linear-gradient(175deg, $white 0%, $white 8%, $light-grey 8%);
+  background-image: url("../img/style-help/bg-triangle-white.svg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: $light-grey;
   padding-top: 90px;
 }
 
@@ -58,7 +60,6 @@
 
 @media (min-width: $tablet-width) {
   .rates {
-    background-image: linear-gradient(176deg, $white 0%, $white 23%, $light-grey 23%);
     margin-bottom: 66px;
   }
 }

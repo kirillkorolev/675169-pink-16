@@ -37,7 +37,7 @@
   }
 }
 
-.reviews__wrapper {
+.reviews {
   position: relative;
 }
 
@@ -151,6 +151,10 @@
     line-height: 30px;
     margin-bottom: 34px;
   }
+
+  .reviews {
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -172,7 +176,7 @@
 
   .reviews {
     padding-top: 185px;
-    padding-bottom: 31px;
+    padding-bottom: 42px;
     background-image: url("../img/icons/icon-quotes.svg");
     background-position: center 72px;
     background-repeat: no-repeat;
