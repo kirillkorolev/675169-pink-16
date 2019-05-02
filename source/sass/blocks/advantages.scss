@@ -28,7 +28,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
-    background-size: 155px 320px;
   }
 }
 
@@ -105,7 +104,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
-      background-size: 268px 480px;
     }
   }
 
@@ -130,7 +128,7 @@
     background-image: url("../img/pictures/timer-tablet@1x.png");
     background-size: 238px 276px;
     background-repeat: no-repeat;
-    background-position: 0 20;
+    background-position: 0 2px;
   }
 
   .advantages__article-wrapper {
@@ -224,7 +222,7 @@
   }
 
   .advantages__item {
-    padding-top: 307px;
+    padding-top: 317px;
     background-repeat: no-repeat;
     background-size: 292px 302px;
     margin-bottom: 0;
@@ -236,7 +234,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
-      background-size: 292px 302px;
     }
   }
 
@@ -246,7 +243,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
-      background-size: 292px 302px;
     }
   }
 
@@ -256,7 +252,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
-      background-size: 292px 302px;
     }
   }
 
@@ -278,7 +273,7 @@
 
   .advantages__slogan:nth-of-type(2) {
     padding: 0;
-    margin-bottom: 88px;
+    margin-bottom: 80px;
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -305,10 +300,6 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  //.advantages__container {
-  //  width: 940px;
-  //}
 
   .advantages__article-container {
     background-color: $light-grey;

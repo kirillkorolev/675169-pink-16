@@ -6,7 +6,7 @@
   padding: 0 20px;
   padding-bottom: 40px;
 
-  &--hidden {
+  span {
     display: none;
   }
 }
@@ -297,7 +297,7 @@
     padding-right: 70px;
     padding-bottom: 72px;
 
-    &--hidden {
+    span {
       display: block;
     }
   }
