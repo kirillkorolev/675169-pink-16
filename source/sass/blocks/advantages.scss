@@ -10,21 +10,25 @@
 }
 
 .advantages__slogan:nth-of-type(2) {
-  padding-bottom: 0;
+  padding-bottom: 40px;
 }
 
 .advantages__list {
   @include reset-list;
-  padding: 119px 20px 0 20px;
-  min-height: 820px;
+  padding: 80px 20px 0 20px;
+  min-height: 780px;
   margin-bottom: 42px;
 
   background-image: url("../img/pictures/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center 542px;
+  background-position: center 502px;
   background-size: 155px 320px;
 
   position: relative;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
 }
 
 .advantages__title {
@@ -59,21 +63,14 @@
 }
 
 .advantages__wrapper {
-  background-image: linear-gradient(175deg, $white 0%, $white 8%, $light-grey 8%);
+  background-image: url("../img/style-help/bg-triangle-white.svg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: $light-grey;
 }
 
 @media (min-width: $tablet-width) {
-  //.advantages__container {
-  //  width: 660px;
-  //  margin: 0 auto;
-  //}
-
-  .advantages__wrapper {
-    background-image: linear-gradient(176deg, $white 0%, $white 10%, $light-grey 10%);
-  }
-
   .advantages__slogan {
     font-size: 40px;
     line-height: 55px;
@@ -90,19 +87,24 @@
   .advantages__slogan:nth-of-type(2) {
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 42px;
+    padding-bottom: 48px;
   }
 
   .advantages__list {
     min-height: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 329px;
+    padding-left: 330px;
+    padding-right: 10px;
     background-image: url("../img/pictures/iphone-screen-3-tablet@1x.png");
     background-size: 268px 480px;
-    background-position: 20px 13px;
-    padding-top: 84px;
+    background-position: 20px 5px;
+    padding-top: 78px;
     margin-bottom: 60px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
   }
 
   .advantages__description {
@@ -126,7 +128,7 @@
     background-image: url("../img/pictures/timer-tablet@1x.png");
     background-size: 238px 276px;
     background-repeat: no-repeat;
-    background-position: 0 20;
+    background-position: 0 2px;
   }
 
   .advantages__article-wrapper {
@@ -220,7 +222,7 @@
   }
 
   .advantages__item {
-    padding-top: 325px;
+    padding-top: 317px;
     background-repeat: no-repeat;
     background-size: 292px 302px;
     margin-bottom: 0;
@@ -228,17 +230,29 @@
 
   .advantages__item:first-child {
     background-image: url("../img/pictures/iphone-screen-1-desktop@1x.png");
-    background-position: 13px 6px;
+    background-position: 13px 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    }
   }
 
   .advantages__item:nth-child(2) {
     background-image: url("../img/pictures/iphone-screen-2-desktop@1x.png");
-    background-position: -16px 8px;
+    background-position: -16px 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
   }
 
   .advantages__item:last-child {
     background-image: url("../img/pictures/iphone-screen-3-desktop@1x.png");
-    background-position: -15px 8px;
+    background-position: -13px 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
   }
 
   .advantages__article {
@@ -259,17 +273,13 @@
 
   .advantages__slogan:nth-of-type(2) {
     padding: 0;
-    margin-bottom: 71px;
+    margin-bottom: 80px;
     padding-left: 120px;
     padding-right: 120px;
   }
 
   .advantages__slogan:nth-of-type(1) {
     margin-bottom: 5px;
-  }
-
-  .advantages__wrapper {
-    background-image: linear-gradient(176deg, $white 0%, $white 13%, $light-grey 13%);
   }
 
   .advantages__article-title {
@@ -290,10 +300,6 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  //.advantages__container {
-  //  width: 940px;
-  //}
 
   .advantages__article-container {
     background-color: $light-grey;

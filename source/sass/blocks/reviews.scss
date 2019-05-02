@@ -37,10 +37,6 @@
   }
 }
 
-.reviews__wrapper {
-  position: relative;
-}
-
 .reviews__left-button,
 .reviews__right-button {
   border: none;
@@ -50,7 +46,7 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 214px;
+  top: 30px;
 }
 
 .reviews__left-button {
@@ -151,6 +147,10 @@
     line-height: 30px;
     margin-bottom: 34px;
   }
+
+  .reviews {
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -172,7 +172,7 @@
 
   .reviews {
     padding-top: 185px;
-    padding-bottom: 31px;
+    padding-bottom: 42px;
     background-image: url("../img/icons/icon-quotes.svg");
     background-position: center 72px;
     background-repeat: no-repeat;
@@ -188,5 +188,11 @@
   .reviews__left-button span,
   .reviews__right-button span {
     display: block;
+  }
+
+  .reviews__test {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
   }
 }

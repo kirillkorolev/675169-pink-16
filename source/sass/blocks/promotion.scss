@@ -7,6 +7,11 @@
   background-size: 100% auto;
   margin-top: -70px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   &--main {
     background-image: url("../img/pictures/iphone-hand-mobile@1x.png"), url("../img/backgrounds/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -15,6 +20,11 @@
     margin-top: -70px;
     padding-top: 463px;
     margin-bottom: 43px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+      background-size: 259px 290px, 100% auto;
+    }
   }
 }
 
@@ -130,19 +140,30 @@
     margin-bottom: 92px;
     margin-top: -110px;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+
     &--main {
-      background-image: url("../img/pictures/iphone-hand-tablet@1x.png"), url("../img/backgrounds/bg-back-tablet@1x.jpg");
-      background-size: 700px 545px, 100% 730px;
-      background-position: -22px 181px, center 0;
-      padding-top: 202px;
+      background-image: url("../img/backgrounds/bg-back-tablet@1x.jpg");
+      background-size: 100% 730px;
+      background-position: center 0;
+      padding-top: 178px;
       margin-bottom: 47px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+        background-size: 1200px auto;
+      }
     }
   }
 
   .promotion__wrapper {
-    width: 340px;
-    padding-top: 0;
+    width: 320px;
+    padding-top: 24px;
     padding-bottom: 0;
+    padding-left: 0;
     background-color: transparent;
   }
 
@@ -159,15 +180,23 @@
   .promotion__download-list {
     margin-bottom: 30px;
   }
+
+  .promotion__container {
+    margin: 0 auto;
+    padding: 0 20px;
+
+    background-image: url("../img/pictures/iphone-hand-tablet@1x.png");
+    background-size: 700px 545px;
+    background-position: -20px 6px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .promotion__container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-
   .promotion__wrapper {
     width: 300px;
     padding: 0;
@@ -183,11 +212,36 @@
     padding-top: 0;
     margin-bottom: 92px;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
+
     &--main {
-      background-image: url("../img/pictures/iphone-hand-desktop@1x.png"), url("../img/backgrounds/bg-back-desktop@1x.jpg");
-      background-size: 1050px 645px, 100% 858px;
-      background-position: 28px 217px, center 0;
+      background-image: url("../img/backgrounds/bg-back-desktop@1x.jpg");
+      background-size: 100% 858px;
+      background-position: center 0;
       margin-bottom: 67px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-size: 2560px auto;
+      }
+    }
+  }
+
+  .promotion__container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-image: url("../img/pictures/iphone-hand-desktop@1x.png");
+    background-size: 1050px 645px;
+    background-position: 26px 216px;
+    margin-bottom: 67px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png"),;
+      background-size: 1056px 645px;
     }
   }
 
@@ -197,13 +251,19 @@
     padding-top: 178px;
     padding-bottom: 102px;
 
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 185px;
+    padding-right: 185px;
 
     &--main {
       padding: 0;
       text-align: center;
       margin-bottom: 51px;
+    }
+
+    &--form {
+      padding-left: 10px;
+      padding-bottom: 101px;
+      padding-right: 10px;
     }
   }
 

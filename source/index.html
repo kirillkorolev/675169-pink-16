@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <script src="./js/picturefill.min.js" async></script>
   </head>
   <body>
   <header class="page-header page-header--menu-closed page-header--nojs">
@@ -119,6 +120,7 @@
       </div>
     </section>
       <section class="reviews">
+        <div class="reviews__test">
 
         <div class="reviews__wrapper slider">
 
@@ -150,7 +152,7 @@
         </div>
         <button class="reviews__left-button" aria-label="left" type="button"><span></span></button>
         <button class="reviews__right-button" aria-label="right" type="button"><span></span></button>
-
+      </div>
       </section>
       <section class="rates">
         <h2 class="visually-hidden">Тарифы</h2>
@@ -244,7 +246,11 @@
 
       </section>
       <section class="map">
-        <img class="map__image" src="./img/backgrounds/bg-map-mobile@1x.png" width="320" height="645" alt="расположение на карте">
+        <picture>
+            <source media="(min-width: 960px)" srcset="./img/pictures/map-desktop-cut@1x.jpg 1x, ./img/pictures/map-desktop-cut@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="./img/pictures/map-tablet-cut@1x.jpg 1x, ./img/pictures/map-tablet-cut@2x.jpg 2x">
+            <img class="map__image" src="./img/pictures/map-mobile-cut@1x.jpg" srcset="./img/pictures/map-mobile-cut@2x.jpg 2x" alt="расположение на карте">
+          </picture>
       </section>
     </main>
 

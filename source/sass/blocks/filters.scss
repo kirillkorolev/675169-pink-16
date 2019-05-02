@@ -8,9 +8,6 @@
 }
 
 .filters__item {
-  margin-left: 21px;
-  margin-right: 20px;
-
   &--current .filters__icon {
     fill: $red;
   }
@@ -20,4 +17,18 @@
   display: block;
   width: 46px;
   height: 46px;
+}
+
+.filters__item:first-child {
+  margin-right: 5px;
+}
+
+.filters__item:last-child {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.filters__item:nth-child(2) {
+  margin-right: 31px;
+  margin-left: 27px;
 }
