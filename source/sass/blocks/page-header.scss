@@ -32,14 +32,19 @@
   transform: rotate(-45deg);
 }
 
-.page-header__logo[href]:hover g,
-.page-header__logo[href]:hover path {
-  fill: $red;
+.page-header__logo {
+  color: $white;
+  fill: $white;
 }
 
-.page-header__logo[href]:active g,
-.page-header__logo[href]:active path {
+.page-header__logo[href]:hover {
+  fill: $red;
+  color: $red;
+}
+
+.page-header__logo[href]:active {
   fill: $active-menu-color;
+  color: $active-menu-color;
 }
 
 .page-header__toggle:hover span::before,
@@ -65,10 +70,6 @@
   justify-content: space-between;
   padding: 20px 20px;
   border-bottom: 1px solid $black;
-}
-
-.page-header__logo {
-  fill: $white;
 }
 
 .page-header__logo-image {

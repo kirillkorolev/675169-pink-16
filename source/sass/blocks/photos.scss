@@ -74,6 +74,11 @@
   margin-right: 20px;
 }
 
+.photos__uploaded-photo {
+  display: block;
+  height: 180px;
+}
+
 .photos__panorama {
   width: 100%;
   position: relative;
@@ -90,6 +95,16 @@
     position: absolute;
     top: 0;
     right: 20px;
+  }
+
+  .photos__item-text {
+    margin: 0 auto;
+  }
+
+  .photos__uploaded-photo {
+    width: 100%;
+    display: block;
+    height: 138px;
   }
 }
 
@@ -207,8 +222,6 @@
     }
 
     .photos__uploaded-photo {
-      width: 100%;
-      display: block;
       height: 510px;
     }
 
