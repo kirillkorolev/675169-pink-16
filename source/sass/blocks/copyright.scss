@@ -10,11 +10,11 @@
   align-items: center;
 }
 
-.copyright__link:hover path {
+.copyright__link:hover {
   fill: $dark-navy;
 }
 
-.copyright__link:active path {
+.copyright__link:active {
   fill: $slider-toggle-grey;
 }
 

@@ -22,6 +22,9 @@
   padding-bottom: 20px;
 }
 
+.editors__icon {
+  fill: $red;
+}
 
 @media (min-width: $desktop-width) {
   .editors__list {
