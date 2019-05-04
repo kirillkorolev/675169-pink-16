@@ -156,7 +156,7 @@
 }
 
 .form__wrapper:nth-of-type(5) {
-  margin-bottom: 49px;
+  margin-bottom: 42px;
 }
 
 .form__wrapper fieldset {
@@ -220,7 +220,7 @@
   position: absolute;
   width: 23px;
   height: 16px;
-  background-image: url("../../img/icons/icon-yes-red.svg");
+  background-image: url("../img/icons/icon-yes-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 5px;
@@ -515,6 +515,56 @@
   .form__checkbox-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__checkbox-item:first-child {
+    order: -1;
+  }
+
+  .form__checkbox-item:nth-child(3) {
+    order: 1;
+  }
+
+  .form__checkbox-item:nth-child(5) {
+    order: 2;
+  }
+
+  .form__checkbox-item:nth-child(2) {
+    order: 3;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .form__checkbox-item:nth-child(4) {
+    order: 4;
+    margin-bottom: 0;
+  }
+
+  .form__checkbox-item:last-child {
+    order: 5;
+  }
+
+  .form__checkbox {
+    padding-bottom: 58px;
+  }
+
+  .form__wrapper:nth-of-type(2) {
+    margin-bottom: 59px;
+  }
+
+  .form__impressions .form__legend {
+    padding-left: 14px;
+  }
+
+  .form__impressions textarea {
+    padding-top: 14px;
+    padding-left: 16px;
+    height: 127px;
+  }
+
+  .form__impressions {
+    padding-bottom: 37px;
   }
 
   .form__wrapper .form__name-details,
@@ -540,11 +590,17 @@
     padding-top: 49px;
   }
 
-  .form__wrapper .form__contact-details {
+  .form__contacts-wrapper {
     margin: 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .form__contact-details .form__item:nth-of-type(1) {
+    margin-bottom: 0;
   }
 
   .form__wrapper fieldset {
@@ -556,17 +612,25 @@
     margin: 0;
   }
 
+  .form__contact-details {
+    padding-bottom: 18px;
+  }
+
   .form__impressions textarea {
     width: 820px;
   }
 
   .form__footer {
-    width: 920px;
+    width: 940px;
     margin: 0;
   }
 
   .form__note span {
     display: inline-block;
     vertical-align: top;
+  }
+
+  .form {
+    margin-bottom: 0;
   }
 }
