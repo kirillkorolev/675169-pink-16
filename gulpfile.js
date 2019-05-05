@@ -24,7 +24,7 @@ gulp.task('css', function() {
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(csso())
-    .pipe(rename('style.min.scss'))
+    .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
@@ -64,14 +64,14 @@ gulp.task('images', function() {
 
 gulp.task('webp', function() {
   return gulp
-    .src('source/img/**/*.{png,jpg}')
+    .src('source/img/pictures/**/*.{png,jpg}')
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/pictures'));
 });
 
 gulp.task('sprite', function() {
   return gulp
-    .src('source/img/icon-*.svg')
+    .src('source/img/icons/*.svg')
     .pipe(
       svgstore({
         inlineSvg: true
@@ -109,5 +109,8 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
+gulp.task(
+  'build',
+  gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html')
+);
 gulp.task('start', gulp.series('build', 'server'));
