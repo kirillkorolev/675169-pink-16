@@ -10,20 +10,22 @@
 
 .rates__list {
   border-collapse: collapse;
+  width: 300%;
+  margin: 0 auto;
 }
 
 .rates__list th {
-  //width: 280px;
+  display: block;
+  width: 280px;
   background-color: $dark-navy;
   border-left: 2px solid $border-grey;
   border-right: 2px solid $border-grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .rates__list tr {
-  width: 280px;
   border-right: 2px solid $border-grey;
 }
 
@@ -49,18 +51,47 @@
 }
 
 .rates__item {
+  width: 280px;
   background-color: white;
   border: 2px solid $border-grey;
 }
 
-.rates__list th:nth-child(odd),
-.rates__list td:nth-child(odd) {
+.rates__category:first-child,
+th:first-child {
   display: none;
 }
 
+.rates__table-header {
+  display: block;
+  text-align: center;
+  border: 2px solid $border-grey;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @media (min-width: $tablet-width) {
+  .rates__toggles {
+    display: none;
+  }
+
+  .rates__category:first-child {
+    line-height: 30px;
+    display: block;
+    background-color: $white;
+    border: 2px solid $border-grey;
+  }
+
+  .rates__title {
+    font-size: 16px;
+  }
+
+  .rates__price {
+    font-size: 18px;
+  }
+
   .rates {
     margin-bottom: 66px;
+    padding-bottom: 70px;
   }
 
   .rates__option {
@@ -74,7 +105,11 @@
 
   .rates__list th,
   .rates__list td {
-    width: 150px;
+    width: 155px;
+  }
+
+  .rates__list tr {
+    width: 620px;
   }
 
   .rates__item {
@@ -84,6 +119,29 @@
   .rates__category {
     line-height: 30px;
     text-align: center;
-    padding: 35px 20px 40px 15px;
+    padding: 15px 20px 15px 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__list {
+    width: 940px;
+  }
+
+  .rates__list th,
+  .rates__list td {
+    width: 235px;
+  }
+
+  .rates__title {
+    font-size: 18px;
+  }
+
+  .rates__price {
+    font-size: 24px;
+  }
+
+  .rates__category:first-child {
+    font-size: 18px;
   }
 }

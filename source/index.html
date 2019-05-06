@@ -159,15 +159,15 @@
           <tr>
             <th>
             </th>
-            <th>
+            <th class="rates__table-header">
               <span class="rates__title">База</span>
               <span class="rates__price">1.99USD</span>
             </th>
-            <th>
+            <th class="rates__table-header">
               <span class="rates__title">Стандарт</span>
               <span class="rates__price">3.99USD</span>
             </th>
-            <th>
+            <th class="rates__table-header">
               <span class="rates__title">Анлим</span>
               <span class="rates__price">9.99USD</span>
             </th>
@@ -284,6 +284,10 @@
       </section>
       <section class="map">
         <picture>
+          <source type="image/webp" media="(min-width: 960px)" srcset="./img/pictures/map-desktop-cut@1x.webp 1x, ./img/pictures/map-desktop-cut@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="./img/pictures/map-tablet-cut@1x.webp 1x, ./img/pictures/map-tablet-cut@2x.webp 2x">
+          <source type="image/webp" srcset="./img/pictures/map-mobile-cut@1x.webp 1x, ./img/pictures/map-mobile-cut@2x.webp 2x">
+
           <source media="(min-width: 960px)" srcset="./img/pictures/map-desktop-cut@1x.jpg 1x, ./img/pictures/map-desktop-cut@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/pictures/map-tablet-cut@1x.jpg 1x, ./img/pictures/map-tablet-cut@2x.jpg 2x">
           <img class="map__image" src="./img/pictures/map-mobile-cut@1x.jpg" srcset="./img/pictures/map-mobile-cut@2x.jpg 2x" alt="расположение на карте">
