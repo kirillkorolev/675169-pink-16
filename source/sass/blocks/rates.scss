@@ -13,7 +13,7 @@
 }
 
 .rates__list th {
-  width: 280px;
+  //width: 280px;
   background-color: $dark-navy;
   border-left: 2px solid $border-grey;
   border-right: 2px solid $border-grey;
@@ -61,5 +61,29 @@
 @media (min-width: $tablet-width) {
   .rates {
     margin-bottom: 66px;
+  }
+
+  .rates__option {
+    display: none;
+  }
+
+  .rates__list {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .rates__list th,
+  .rates__list td {
+    width: 150px;
+  }
+
+  .rates__item {
+    text-align: center;
+  }
+
+  .rates__category {
+    line-height: 30px;
+    text-align: center;
+    padding: 35px 20px 40px 15px;
   }
 }
