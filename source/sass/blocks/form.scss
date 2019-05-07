@@ -421,6 +421,18 @@
     padding-left: 18px;
     padding-top: 16px;
     margin-bottom: 17px;
+    background-repeat: no-repeat;
+    background-position: 457px center;
+
+    &--phone {
+      background-image: url("../img/icons/icon-phone.svg");
+      background-size: 24px 24px;
+    }
+
+    &--mail {
+      background-image: url("../img/icons/icon-mail.svg");
+      background-size: 22px 14px;
+    }
   }
 
   .form__contact-details label {

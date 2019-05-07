@@ -66,7 +66,7 @@
         <div class="photos__panorama">
             <a class="photos__image-link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset=".img/pictures/panorama-desktop@1x.webp 1x, ./img/pictures/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="./img/pictures/panorama-desktop@1x.webp 1x, ./img/pictures/panorama-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/pictures/panorama-tablet@1x.webp 1x, ./img/pictures/panorama-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="./img/pictures/panorama-mobile@1x.webp 1x, ./img/pictures/panorama-mobile@2x.webp 2x">
 
@@ -387,8 +387,11 @@
           <a class="page-footer__link" href="#">
             <span class="visually-hidden">Мобильное приложение Pink</span>
 
-            <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" width="147" height="41">
+            <svg class="page-footer__logo page-footer__logo--mobile" xmlns="http://www.w3.org/2000/svg" width="147" height="41">
               <use xlink:href="#logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="page-footer__logo page-footer__logo--desktop" width="150" height="43">
+              <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
 
           </a>
