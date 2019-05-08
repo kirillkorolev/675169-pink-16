@@ -6,6 +6,7 @@
 .map__image {
   width: $mobile-width;
   margin: 0 auto;
+  display: block;
 }
 
 .map::before {
@@ -14,13 +15,12 @@
   background-size: 100% 35px;
   background-position: 0 -1px;
   background-repeat: no-repeat;
-
-  //display: block;
   position: absolute;
   width: 100%;
   height: 35px;
   left: 0;
   top: 0;
+  z-index: 5;
 }
 
 @media (min-width: $tablet-width) {

@@ -68,9 +68,7 @@
 
   border: 2px solid $inpt-border-grey;
   width: 282px;
-  padding-left: 22px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 13px 22px;
   margin-bottom: 26px;
 
   &--checkbox {
@@ -641,5 +639,9 @@
 
   .form {
     margin-bottom: 0;
+  }
+
+  .form__contact-details .form__input {
+    background-position: 335px;
   }
 }

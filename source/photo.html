@@ -32,7 +32,7 @@
           </svg>
         </a>
         <button class="page-header__toggle" aria-label="close" type="button">
-          <span></span>
+          <span class="page-header__close-toggle"></span>
         </button>
       </div>
       <nav class="main-nav">
@@ -341,27 +341,33 @@
           <div class="image-upload__editors editors">
             <ul class="editors__list">
               <li class="editors__item">
-                <svg class="editors__icon" width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#icon-editor-crop"></use>
-                </svg>
+                <label class="editors__label" for="editor-cut">
+                  <svg class="editors__icon" width="24" height="24">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </label>
                 <div class="editors__range">
-                  <input class="editors__range-input range-control" type="range" name="range">
+                  <input class="editors__range-input range-control" type="range" name="range" id="editor-cut">
                 </div>
               </li>
               <li class="editors__item">
-                <svg class="editors__icon" width="24" height="24">
-                  <use xlink:href="#icon-editor-fill"></use>
-                </svg>
+                <label class="editors__label" for="editor-fill">
+                  <svg class="editors__icon" width="24" height="24">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </label>
                 <div class="editors__range">
-                  <input class="editors__range-input range-control" type="range" name="range">
+                  <input class="editors__range-input range-control" type="range" name="range" id="editor-fill">
                 </div>
               </li>
               <li class="editors__item">
-                <svg class="editors__icon" width="18" height="18">
-                  <use xlink:href="#icon-editor-contrast"></use>
-                </svg>
+                <label class="editors__label" for="editor-contrast">
+                  <svg class="editors__icon" width="18" height="18">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </label>
                 <div class="editors__range">
-                  <input class="editors__range-input range-control" type="range" name="range">
+                  <input class="editors__range-input range-control" type="range" name="range" id="editor-contrast">
                 </div>
               </li>
             </ul>

@@ -64,6 +64,15 @@
   padding: 20px 0;
 }
 
+.modal__button:hover {
+  background-color: $green-hover;
+}
+
+.modal__button:active {
+  background-color: $green-hover;
+  color: $active-menu-color;
+}
+
 .modal__button-wrapper {
   text-align: center;
 }

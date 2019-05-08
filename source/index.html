@@ -33,7 +33,7 @@
           </svg>
         </a>
         <button class="page-header__toggle" aria-label="close" type="button">
-          <span></span>
+          <span class="page-header__close-toggle"></span>
         </button>
       </div>
       <nav class="main-nav">
@@ -84,8 +84,10 @@
     </section>
     <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Pink</h2>
-        <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-        <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+        <div class="container">
+          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+        </div>
 
         <div class="advantages__wrapper">
           <div class="container">
@@ -155,7 +157,7 @@
       </section>
       <section class="rates">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="rates__list">
+        <table class="rates__table">
           <tr>
             <th>
             </th>
@@ -164,6 +166,7 @@
               <span class="rates__price">1.99USD</span>
             </th>
             <th class="rates__table-header">
+              <span class="rates__hit">Хит</span>
               <span class="rates__title">Стандарт</span>
               <span class="rates__price">3.99USD</span>
             </th>
@@ -176,7 +179,7 @@
             <td class="rates__category">
               <span>Розовый фильтр</span>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
               <div class="rates__wrapper">
               <span class="rates__option">Розовый фильтр</span>
               <span class="visually-hidden rates__value">Yes</span>
@@ -185,7 +188,7 @@
               </svg>
               </div>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
               <div class="rates__wrapper">
                 <span class="rates__option">Розовый фильтр</span>
                 <span class="visually-hidden rates__value">Yes</span>
@@ -194,7 +197,7 @@
                 </svg>
               </div>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
                 <div class="rates__wrapper">
                 <span class="rates__option">Розовый фильтр</span>
                 <span class="visually-hidden rates__value">Yes</span>
@@ -208,7 +211,7 @@
             <td class="rates__category">
               <span>Смайлики</span>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
                 <div class="rates__wrapper">
               <span class="rates__option">Смайлики</span>
               <span class="visually-hidden rates__value">No</span>
@@ -217,7 +220,7 @@
               </svg>
               </div>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
                 <div class="rates__wrapper">
               <span class="rates__option">Смайлики</span>
               <span class="visually-hidden rates__value">Yes</span>
@@ -226,7 +229,7 @@
               </svg>
               </div>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
                 <div class="rates__wrapper">
               <span class="rates__option">Смайлики</span>
               <span class="visually-hidden rates__value">Yes</span>
@@ -240,7 +243,7 @@
             <td class="rates__category">
               <span>Комментарии</span>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
                 <div class="rates__wrapper">
               <span class="rates__option">Комментарии</span>
               <span class="visually-hidden rates__value">No</span>
@@ -249,7 +252,7 @@
               </svg>
               </div>
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
               <div class="rates__wrapper">
               <span class="rates__option">Комментарии</span>
               <span class="visually-hidden rates__value">No</span>
@@ -259,7 +262,7 @@
               </div>
 
             </td>
-            <td class="rates__item">
+            <td class="rates__cell">
               <div class="rates__wrapper">
               <span class="rates__option">Комментарии</span>
               <span class="visually-hidden rates__value">Yes</span>
@@ -301,6 +304,7 @@
 
       </section>
       <section class="map">
+
         <picture>
           <source type="image/webp" media="(min-width: 960px)" srcset="./img/pictures/map-desktop-cut@1x.webp 1x, ./img/pictures/map-desktop-cut@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)" srcset="./img/pictures/map-tablet-cut@1x.webp 1x, ./img/pictures/map-tablet-cut@2x.webp 2x">

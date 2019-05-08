@@ -88,3 +88,10 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .range-control {
+    width: 200px;
+    margin: 0;
+  }
+}
