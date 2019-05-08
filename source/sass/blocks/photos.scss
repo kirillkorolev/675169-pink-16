@@ -103,8 +103,8 @@
 
   .photos__uploaded-photo {
     width: 100%;
-    display: block;
     height: 138px;
+    object-fit: cover;
   }
 }
 

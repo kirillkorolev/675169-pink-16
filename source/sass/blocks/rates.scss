@@ -6,25 +6,16 @@
   background-position: 0 0;
   background-color: $light-grey;
   padding-top: 90px;
+  overflow: hidden;
 }
 
-.rates__list {
+.rates__table {
   border-collapse: collapse;
-}
-
-.rates__list th {
-  width: 280px;
-  background-color: $dark-navy;
-  border-left: 2px solid $border-grey;
-  border-right: 2px solid $border-grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.rates__list tr {
-  width: 280px;
-  border-right: 2px solid $border-grey;
+  width: 840px;
+  margin: 0 auto;
+  empty-cells: hide;
+  transform: translateX(-260px);
+  margin-bottom: 41px;
 }
 
 .rates__title {
@@ -48,18 +39,181 @@
   text-transform: uppercase;
 }
 
-.rates__item {
+.rates__cell {
+  width: 280px;
   background-color: white;
+  padding-top: 13px;
+  padding-left: 24px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.rates__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rates__table-header {
+  width: 280px;
+  background-color: $dark-navy;
+  border-left: 2px solid $border-grey;
+  border-right: 2px solid $border-grey;
+
+  padding: 15px 50px 22px 50px;
+  text-align: center;
+  position: relative;
+}
+
+.rates__table td,
+.rates__table th {
   border: 2px solid $border-grey;
 }
 
-.rates__list th:nth-child(odd),
-.rates__list td:nth-child(odd) {
+.rates__table th:first-child {
   display: none;
 }
 
+.rates__category {
+  display: none;
+}
+
+.rates__toggles {
+  padding-bottom: 46px;
+
+  .slider__toggle {
+    border-color: $light-grey;
+
+    &--current {
+      border-color: $dark-navy;
+    }
+  }
+}
+
+.rates__hit {
+  background: url("../img/style-help/bg-hit.svg") no-repeat 0 0;
+  position: absolute;
+  width: 72px;
+  height: 75px;
+  top: 0;
+  left: 0;
+
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 30px;
+}
+
 @media (min-width: $tablet-width) {
+  .rates__hit {
+    background: url("../../img/style-help/bg-hit-tablet.svg") no-repeat 0 0;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  .rates__toggles {
+    display: none;
+  }
+
+  .rates__table th:first-child {
+    display: table-cell;
+    background-color: transparent;
+    border: none;
+  }
+
+  .rates__table-header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .rates__category:first-child {
+    line-height: 30px;
+    display: table-cell;
+    background-color: $white;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .rates__title {
+    font-size: 16px;
+  }
+
+  .rates__price {
+    font-size: 18px;
+  }
+
+  .rates__wrapper {
+    justify-content: center;
+  }
+
   .rates {
-    margin-bottom: 66px;
+    margin-bottom: 48px;
+    padding-bottom: 70px;
+    padding-top: 86px;
+  }
+
+  .rates__option {
+    display: none;
+  }
+
+  .rates__table {
+    width: 620px;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .rates__table th {
+    width: 155px;
+    padding-top: 11px;
+    padding-bottom: 7px;
+  }
+
+  .rates__table td {
+    width: 155px;
+  }
+
+  .rates__table tr {
+    width: 620px;
+  }
+
+  .rates__cell {
+    padding: 0;
+  }
+
+  .rates__category {
+    line-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    text-align: left;
+    padding-left: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__table {
+    width: 940px;
+  }
+
+  .rates__table th,
+  .rates__table td {
+    width: 235px;
+  }
+
+  .rates__title {
+    font-size: 18px;
+  }
+
+  .rates__price {
+    font-size: 24px;
+  }
+
+  .rates__category:first-child {
+    font-size: 18px;
+  }
+
+  .rates__table-header {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

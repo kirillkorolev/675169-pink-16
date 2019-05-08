@@ -28,7 +28,9 @@
 
 .image-upload__current-image {
   padding-top: 20px;
-  margin-bottom: 32px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  display: block;
 }
 
 .image-upload__button {
@@ -75,15 +77,11 @@
 
 .image-upload__buttons-container {
   border-top: 2px solid $border-grey;
-  padding-top: 38px;
+  padding-top: 34px;
 }
 
 .image-upload__range-input {
   background-color: $black;
-}
-
-.image-upload__range {
-  margin-bottom: 19px;
 }
 
 .image-upload__editors {

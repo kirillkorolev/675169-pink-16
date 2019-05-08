@@ -6,6 +6,7 @@
 .map__image {
   width: $mobile-width;
   margin: 0 auto;
+  display: block;
 }
 
 .map::before {
@@ -14,13 +15,12 @@
   background-size: 100% 35px;
   background-position: 0 -1px;
   background-repeat: no-repeat;
-
-  //display: block;
   position: absolute;
   width: 100%;
   height: 35px;
   left: 0;
   top: 0;
+  z-index: 5;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,6 +31,8 @@
 
   .map__image {
     width: $tablet-width;
+    height: 376px;
+    display: block;
   }
 }
 
@@ -38,10 +40,28 @@
 @media (min-width: $desktop-width) {
   .map::before {
     height: 127px;
-    background-size: 100% 102px;
+    background-size: 100% 88px;
   }
 
   .map__image {
     width: $desktop-width;
+    height: 484px;
+  }
+
+  .rates {
+    padding-top: 144px;
+    padding-bottom: 94px;
+    margin-bottom: 68px;
+  }
+
+  .rates__list th {
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
+
+  .rates__category {
+    padding-top: 12px;
+    padding-bottom: 17px;
+    padding-left: 19px;
   }
 }

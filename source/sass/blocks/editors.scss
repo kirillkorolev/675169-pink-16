@@ -8,6 +8,7 @@
 .editors__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .editors__item:nth-child(2) {
@@ -24,6 +25,16 @@
 
 .editors__icon {
   fill: $red;
+  color: $red;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .editors__label {
+    display: block;
+    flex-shrink: 2;
+  }
 }
 
 @media (min-width: $desktop-width) {

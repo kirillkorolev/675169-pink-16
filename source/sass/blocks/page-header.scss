@@ -34,16 +34,13 @@
 
 .page-header__logo {
   color: $white;
-  fill: $white;
 }
 
 .page-header__logo[href]:hover {
-  fill: $red;
   color: $red;
 }
 
 .page-header__logo[href]:active {
-  fill: $active-menu-color;
   color: $active-menu-color;
 }
 
@@ -102,7 +99,7 @@
         display: none;
       }
 
-      span {
+      .page-header__close-toggle {
         display: block;
         height: 4px;
         background-color: $white;
