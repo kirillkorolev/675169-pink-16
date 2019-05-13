@@ -427,7 +427,6 @@
   .form__contact-details .form__item:first-child::after,
   .form__contact-details .form__item:last-child::after {
     content: "";
-    background-image: url("../img/icons/icon-phone.svg");
     position: absolute;
     background-color: $border-grey;
     background-repeat: no-repeat;
@@ -550,7 +549,7 @@
   .form__contact-details .form__item:first-child::after,
   .form__contact-details .form__item:last-child::after {
     width: 60px;
-    height: 60px;
+    height: 58px;
   }
 
   .form__wrapper:nth-of-type(3) {
