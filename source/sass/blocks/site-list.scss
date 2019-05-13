@@ -41,7 +41,7 @@
     width: 625px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    //justify-content: space-between;
   }
 
   .site-list__item {
@@ -53,6 +53,10 @@
       color: $white;
       cursor: default;
     }
+  }
+
+  .site-list__item:not(:last-child) {
+    margin-right: 80px;
   }
 
   .site-list__link {

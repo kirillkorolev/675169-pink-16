@@ -4,7 +4,8 @@
   -webkit-appearance: none;
   width: 240px;
   height: 18px;
-  margin: 0 auto 30px;
+  margin: 0 auto 26px;
+  padding: 0;
   background-color: transparent;
   outline: none;
   border: none;
@@ -93,5 +94,11 @@
   .range-control {
     width: 200px;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-control {
+    width: 290px;
   }
 }

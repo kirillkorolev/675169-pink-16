@@ -11,10 +11,10 @@
 
 .rates__table {
   border-collapse: collapse;
-  width: 840px;
+  width: 300%;
   margin: 0 auto;
   empty-cells: hide;
-  transform: translateX(-260px);
+  transform: translateX(-33.3%);
   margin-bottom: 41px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .rates__cell {
-  width: 280px;
+  min-width: 280px;
   background-color: white;
   padding-top: 13px;
   padding-left: 24px;
@@ -97,16 +97,31 @@
   height: 75px;
   top: 0;
   left: 0;
+}
 
+.rates__hit::before {
+  content: "Хит";
   color: $white;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 30px;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 2;
+  top: 11px;
+  left: 11px;
+}
+
+.rates__container {
+  padding: 0 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .rates__hit {
-    background: url("../../img/style-help/bg-hit-tablet.svg") no-repeat 0 0;
+    background: url("../img/style-help/bg-hit-tablet.svg") no-repeat 0 0;
 
     width: 60px;
     height: 60px;
@@ -123,16 +138,14 @@
   }
 
   .rates__table-header {
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 155px;
+    padding: 11px 25px 7px 25px;
   }
 
   .rates__category:first-child {
     line-height: 30px;
     display: table-cell;
     background-color: $white;
-    border-right: none;
-    border-bottom: none;
   }
 
   .rates__title {
@@ -157,16 +170,16 @@
     display: none;
   }
 
-  .rates__table {
+  .rates__container {
     width: 620px;
-    margin: 0 auto;
-    transform: none;
+    overflow: visible;
+    padding: 0;
   }
 
-  .rates__table th {
-    width: 155px;
-    padding-top: 11px;
-    padding-bottom: 7px;
+  .rates__table {
+    width: 100%;
+    margin: 0 auto;
+    transform: none;
   }
 
   .rates__table td {
@@ -179,6 +192,7 @@
 
   .rates__cell {
     padding: 0;
+    min-width: 155px;
   }
 
   .rates__category {
@@ -188,16 +202,25 @@
     text-align: left;
     padding-left: 14px;
   }
+
+  .rates__hit::before {
+    top: 3px;
+    left: 9px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .rates__table {
+  .rates__container {
     width: 940px;
   }
 
   .rates__table th,
   .rates__table td {
     width: 235px;
+  }
+
+  .rates__table-header {
+    padding: 15px 50px 21px 50px;
   }
 
   .rates__title {
@@ -212,8 +235,31 @@
     font-size: 18px;
   }
 
-  .rates__table-header {
-    padding-left: 50px;
-    padding-right: 50px;
+  .rates__hit {
+    background: url("../img/style-help/bg-hit.svg") no-repeat 0 0;
+    width: 74px;
+    height: 73px;
+  }
+
+  .rates__hit::before {
+    top: 11px;
+    left: 11px;
+  }
+
+  .rates {
+    padding-top: 144px;
+    padding-bottom: 94px;
+    margin-bottom: 68px;
+  }
+
+  .rates__list th {
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
+
+  .rates__category {
+    padding-top: 12px;
+    padding-bottom: 17px;
+    padding-left: 19px;
   }
 }
