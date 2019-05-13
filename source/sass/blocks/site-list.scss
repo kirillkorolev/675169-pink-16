@@ -4,7 +4,6 @@
   line-height: 32px;
   font-weight: 700;
   color: $white;
-
   display: block;
   padding: 15px 20px;
   text-align: center;
@@ -41,7 +40,6 @@
     width: 625px;
     display: flex;
     flex-wrap: wrap;
-    //justify-content: space-between;
   }
 
   .site-list__item {
@@ -63,7 +61,6 @@
     line-height: 18px;
     font-weight: 400;
     background-color: inherit;
-
     text-transform: none;
     margin-top: 45px;
     padding: 0;
