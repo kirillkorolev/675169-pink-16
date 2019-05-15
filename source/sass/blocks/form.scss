@@ -482,7 +482,7 @@
 
   .form__impressions {
     border: 2px solid $border-grey;
-    padding: 34px 60px 43px 60px;
+    padding: 36px 60px 43px 60px;
   }
 
   .form__impressions textarea {
@@ -585,6 +585,10 @@
 
   .form__checkbox-item:last-child {
     order: 5;
+  }
+
+  .form__checkbox-item:nth-child(5) .form__checkbox-label {
+    padding-right: 5px;
   }
 
   .form__checkbox {
